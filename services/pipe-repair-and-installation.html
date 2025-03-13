@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="canonical" href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/pipe-repair-and-installation" />
+    <meta name="robots" content="index">
+    <link rel="icon" href="https://raw.githubusercontent.com/TintStudio/images/refs/heads/main/cropped-plumbers-in-rockford-180x180.webp" type="image/x-icon">
+    <title>Pipe Repair and Installation</title>
+    <style>
+
+        /* Reset and base styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  /* nav section*/
+  nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2563eb; /* Adjust background color */
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+ul li {
+  position: relative;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  display: block;
+}
+
+ul li .contact-btn {
+  background-color: white;
+  color: #2563eb;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+/* Ensure the dropdown container is inline */
+/* Ensures the dropdown container is inline */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style the dropdown button */
+.dropdown > a {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between text and arrow */
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+/* Dropdown arrow styling */
+.dropdown > a::after {
+  content: "▼"; /* Unicode down arrow */
+  font-size: 12px;
+  color: white;
+  position: relative;
+  top: 2px; /* Adjust to move it up */
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Rotate arrow when hovered */
+.dropdown:hover > a::after {
+  transform: rotate(180deg);
+}
+
+/* Existing dropdown menu styling */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 250px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  width: 100%;
+}
+
+.dropdown-menu li a {
+  color: black;
+  padding: 10px;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f4f4f4;
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('https://github.com/TintStudio/images/blob/main/plumber-installing-new-pipes-2.jpg?raw=true') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Overlay Effect */
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hero Content */
+.hero-content {
+  color: white;
+  text-align: left;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.hero-content h4 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.hero-content h1 {
+  font-size: 38px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+/* Call-To-Action Button */
+.btn-primary {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #007bff;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+/*Service Section*/
+/* Services Section */
+.services {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f4f4f4;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Services Grid */
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Service Box */
+
+.service-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.service-box i {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.service-box h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+}
+
+/*Why Choose us*/
+/* Why Choose Us Section */
+.why-choose-us {
+  text-align: center;
+  padding: 50px 20px;
+  background: #ffffff;
+}
+
+.why-choose-us h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Why Choose Us Grid */
+.why-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Why Box */
+.why-box {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.why-box i {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.why-box h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0a2e5c;
+}
+
+.why-box p {
+  font-size: 16px;
+  color: #333;
+}
+
+.why-box:hover {
+  transform: translateY(-5px);
+}
+
+/*footer*/
+
+
+      .footer {
+          background-color: #1E4ED8;
+          color: white;
+          padding: 30px 50px;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+      }
+      .footer-column {
+          max-width: 250px;
+      }
+      .footer h3 {
+          margin-bottom: 15px;
+      }
+      .footer p, .footer a {
+          color: white;
+          text-decoration: none;
+          display: block;
+          margin-bottom: 8px;
+      }
+      .footer .social-icons a {
+          display: inline-block;
+          margin-right: 10px;
+          font-size: 20px;
+          color: white;
+      }
+      .footer .social-icons a:hover {
+          color: #FFD700;
+      }
+      .footer-bottom {
+          text-align: center;
+          padding: 15px;
+          background-color: #153DB3;
+          color: white;
+          font-size: 14px;
+      }
+
+      /*Content Section*/
+      .plumbing-services {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plumbing-services h2 {
+  color: #0a3871;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.text {
+  flex: 1;
+}
+
+.text p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #0a3871;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #072b5a;
+}
+
+.image {
+  flex: 1;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 5px;
+  max-width: 400px;
+}
+
+/*Faqs Section*/
+.faq {
+  text-align: center;
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.faq h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.faq-question {
+  width: 100%;
+  background: #002c66;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question .icon {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.faq-answer {
+  display: none;
+  background: #f8f8f8;
+  padding: 15px;
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-item.active .faq-question .icon {
+  transform: rotate(45deg);
+}
+
+/*Article Section*/
+.articles-section {
+  
+  color:black;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.articles-section h2 {
+  font-size: 2.1em;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.articles-container {
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 2px;
+}
+
+.article-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  text-align: left;
+}
+
+
+.article-box h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.article-box p {
+  font-size: 1.1em;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.article-box ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0;
+  margin: 15px 0;
+  width: 100%;
+  overflow-wrap: break-word; /* Ensures long words wrap */
+}
+
+.article-box ul li {
+  width: 100%; /* Makes sure list items stay within the box */
+  word-wrap: break-word; /* Ensures words break properly */
+  white-space: normal; /* Prevents text from extending outside */
+  padding: 10px;
+  border-left: 4px solid #ffcc00;
+}
+
+.article-box ul li::before {
+  content: "✔"; /* Adds a checkmark as a bullet */
+  color: #27ae60; /* Green check color */
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.article-box ul li:hover {
+  background: #ececec;
+  transform: translateX(5px); /* Slight movement on hover */
+}
+
+
+.read-more {
+  display: inline-block;
+  margin-top: 15px;
+  color: #ffcc00;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+     <!--Nav Section-->
+     <nav>
+      <div class="logo">
+          <img src="https://raw.githubusercontent.com/TintStudio/images/refs/heads/main/plumbers-in-rockford.webp" alt="Logo">
+      </div>
+      <ul>
+      <li><a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/">Home</a></li>
+          
+          <li class="dropdown">
+              <a href="#">Commercial Plumbing </a>
+              <ul class="dropdown-menu">
+                  <li><a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/water-leak-detection-service">Water Leak Detection Service</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/pipe-repair-and-installation">Pipe Repair and Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/sewer-and-drain-cleaning-services">Sewer and Drain Cleaning Services</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/low-water-pressure-fixes">Low Water Pressure Fixes</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/pipelining-repair-and-installation">Pipelining Repair & Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/gas-line-repair-and-installation">Gas Line Repair and Installation</a></li>
+              </ul>
+          </li>
+          
+          
+  
+          <li class="dropdown">
+              <a href="#">Blog </a>
+              <ul class="dropdown-menu">
+                  <li><a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/plumbing-experts-rockford">Top Benefits of Rockford Plumbing Experts</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/plumbing-tips-seasonal">Essential Seasonal Plumbing Tips</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/quick-plumbing-fix">Fix Plumbing Issues Quickly</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/rockford-emergency-plumbers">Emergency Plumbers in Rockford</a></li>
+              </ul>
+          </li>
+  
+        
+          <li><a class="contact-btn" href="https://www.plumbersinrockford.com/contact/" rel="Nofollow">Contact Us</a></li>
+      </ul>
+  </nav>
+    
+    
+
+    <!--Hero Section-->
+
+    <section class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h4>Welcome to Plumbers in Rockford</h4>
+                <h1>Pipe Repair and Installation service in <br>Rockford, IL</h1>
+                <p>Leaky or damaged pipes? We provide expert pipe repair and installation to keep your plumbing system running smoothly. Contact us today for fast and reliable service!                </p>
+                <a href="tel:858-726-5590" class="btn-primary">
+                    📞 Book An Appointment
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--Article Section-->
+
+<section class="articles-section">
+    <h2>
+      Pipe Repair and Installation: Ensuring a Strong Plumbing System</h2>
+        
+    <div class="articles-container">
+        
+        <!-- Clogged Drain Repair and Installation -->
+        <article class="article-box">
+          
+          <p>Pipe repair and installation are crucial for maintaining a functional and efficient plumbing system. Whether fixing leaks, replacing old pipes, or installing new plumbing lines, proper maintenance prevents costly damages. Professional pipe services ensure long-term reliability and improved water flow. Ignoring minor pipe issues can lead to significant structural damage, mold growth, and increased utility bills, making timely repairs essential.</p>
+
+          <h3>Common Causes of Pipe Damage</h3>
+          <p>Pipes can deteriorate over time due to corrosion, high water pressure, or temperature fluctuations. External factors such as tree root intrusion and ground movement can also cause pipe damage. Identifying these issues early helps prevent leaks and costly repairs. In older homes, galvanized steel pipes may rust internally, leading to restricted water flow and eventual leaks. Additionally, improper pipe installation or low-quality materials can result in premature failures, emphasizing the importance of professional plumbing services.</p>
+      
+          <h3>Signs You Need Pipe Repair</h3>
+          <p>Leaks, water stains on walls, and low water pressure are common indicators of pipe issues. Unusual noises such as banging or whistling sounds may suggest pipe blockages or pressure imbalances. An increase in water bills can also signal hidden leaks requiring immediate attention. In some cases, foul odors from drains or discolored water can indicate corrosion or bacterial buildup inside pipes, highlighting the need for thorough inspections and prompt repairs.</p>
+      
+          <h3>Different Types of Pipes for Installation</h3>
+          <p>Choosing the right type of pipe ensures durability and efficiency. Copper pipes are long-lasting and resistant to corrosion, making them ideal for water supply lines. PVC pipes are commonly used for drainage due to their lightweight and rust-resistant properties. PEX pipes offer flexibility, reducing the risk of freezing in colder climates. Stainless steel pipes provide high durability for industrial applications, while cast iron pipes are preferred for underground sewage systems due to their strength and longevity.</p>
+      
+          <h3>Pipe Repair Techniques</h3>
+          <p>Professional plumbers use various repair techniques depending on the severity of the damage. Pipe patching involves sealing small leaks with epoxy or pipe clamps. Pipe relining is a trenchless method that inserts a new lining inside existing pipes, reinforcing their structure. For extensive damage, pipe replacement ensures a long-term solution. Hydro jetting can be used to clear out debris and mineral buildup in pipes, restoring water flow without requiring invasive repairs. In some cases, sectioning out and replacing only the damaged pipe segments can be a cost-effective solution.</p>
+      
+          <h3>The Process of Pipe Installation</h3>
+          <p>Installing new pipes requires careful planning and precise execution. Plumbers begin by assessing the layout and selecting the appropriate pipe materials. Proper joint sealing and secure fittings prevent leaks, ensuring a strong plumbing system. Pressure testing confirms the integrity of the installation before finalizing connections. In larger installations, factors such as pipe sizing, water pressure regulation, and insulation must be considered to ensure optimal performance. Skilled plumbers follow local building codes to ensure compliance and longevity.</p>
+      
+          <h3>Preventive Measures to Extend Pipe Lifespan</h3>
+          <p>Routine maintenance helps extend the lifespan of pipes and prevents sudden failures. Insulating pipes reduces the risk of freezing and bursting in winter. Regular inspections detect minor leaks early, allowing for quick repairs before they escalate. Adjusting water pressure levels prevents excessive strain on pipes. Homeowners can also invest in water softeners to reduce mineral buildup that can lead to pipe corrosion. Flushing out pipes periodically and avoiding the disposal of grease or harsh chemicals down drains helps maintain a healthy plumbing system.</p>
+      
+          <h3>Benefits of Professional Pipe Services</h3>
+          <p>Hiring professional plumbers ensures accurate repairs and safe installations. Experts use advanced tools to diagnose hidden leaks and structural weaknesses. Their knowledge of plumbing codes guarantees compliance, preventing potential legal and safety issues. Proper pipe installation also improves water efficiency and reduces long-term maintenance costs. Professional plumbers provide warranties on their work, offering peace of mind to homeowners. Additionally, emergency plumbing services are available for urgent<a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/"> pipe repairs</a> to prevent extensive water damage.</p>
+      
+          <h3>Choosing the Right Plumbing Service</h3>
+          <p>Selecting a reliable plumbing company is essential for high-quality repairs and installations. Look for licensed and experienced professionals with a strong reputation. Transparent pricing, emergency services, and warranties on repairs are key factors in choosing the right service provider. Checking online reviews, requesting detailed estimates, and verifying insurance coverage are additional steps homeowners can take to ensure they hire trustworthy professionals. A reputable plumber will also offer preventive maintenance plans to keep the plumbing system in top condition year-round.</p>
+      
+          <h3>Expert Pipe Repair and Installation Services</h3>
+          <p>For all your pipe repair and installation needs, our skilled team is ready to help. We provide comprehensive plumbing solutions using top-quality materials and modern techniques. Our team specializes in handling both residential and commercial pipe systems, ensuring reliability and efficiency. Contact us today for reliable service and long-lasting plumbing solutions. Whether you need <a href="https://www.plumbersinrockford.com/services/commercial-plumbing/pipe-repair/">emergency repairs </a>or a complete pipe system overhaul, we are committed to delivering high-quality results with professional expertise.</p>
+      
+
+
+
+        
+        </article>
+
+
+    </section>
+
+     <!--Service Section-->
+     <section class="services">
+      <h2>Our Services</h2>
+      <div class="service-container">
+          <div class="service-box">
+              <i class="fas fa-hand-holding-water"></i>
+              <h3>Water Leak Detection Service</h3>
+              <p>Expert solutions to detect and fix water leaks, preventing damage and high bills.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/water-leak-detection-service" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-tools"></i>
+              <h3>Pipe Repair and Installation</h3>
+              <p>Professional pipe repair and installation services for reliable plumbing systems.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/pipe-repair-and-installation" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-seedling"></i>
+              <h3>Sewer and Drain Cleaning Services</h3>
+              <p>Thorough sewer and drain cleaning to prevent clogs and backups.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/sewer-and-drain-cleaning-services" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-tint"></i>
+              <h3>Low Water Pressure Fixes</h3>
+              <p>Effective solutions to improve water pressure and optimize flow.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/low-water-pressure-fixes" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-pipe"></i>
+              <h3>Pipelining Repair & Installation</h3>
+              <p>Durable pipelining repair and installation services for long-term plumbing solutions.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/pipelining-repair-and-installation" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-gas-pump"></i>
+              <h3>Gas Line Repair and Installation</h3>
+              <p>Safe and efficient gas line repair and installation services for your home or business.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/gas-line-repair-and-installation" class="btn">Read More</a>
+          </div>
+      </div>
+  </section>
+
+
+
+
+
+
+
+
+
+<!--Faqs Section-->
+<section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+      
+      <div class="faq-item">
+        <button class="faq-question">What are the signs that I need pipe repair?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>Common signs include low water pressure, discolored water, unusual noises, leaks, and visible pipe corrosion. If you notice any of these, it’s best to call a professional.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">How long does it take to repair a damaged pipe?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>Repair times vary based on the severity of the damage. Minor leaks can be fixed within a few hours, while major repairs or replacements may take a day or more.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">When should I replace my pipes instead of repairing them?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>If your pipes are old, corroded, or frequently leaking, replacing them may be a more cost-effective and long-term solution than repeated repairs.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">What types of pipes do you install?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>We install various pipe materials, including copper, PVC, PEX, and galvanized steel, ensuring durability and compatibility with your plumbing system.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">Can I repair a leaking pipe myself?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>Temporary fixes like pipe tape or sealants may work for minor leaks, but professional repair is recommended to prevent long-term damage and water waste.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">Do you offer emergency pipe repair services?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>Yes, we provide 24/7 emergency pipe repair services in Rockford to quickly address burst pipes, major leaks, and other urgent plumbing issues.</p>
+        </div>
+    </div>
+    
+
+
+
+
+
+    </div>
+</section>|
+
+<!--Article Section-->
+
+
+
+
+<footer>
+    <div class="footer">
+        <div class="footer-column">
+            <h3>PlumbPro Services</h3>
+            <p>Professional plumbing services for residential and commercial properties. Available 24/7 for all your plumbing needs.</p>
+            <div class="social-icons">
+                <a href="https://web.facebook.com/plumbersinrockford"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/plumberrockford"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/plumbersinrockford/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/plumbersinrockford/"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#showservice">Services</a>
+            <a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/sitemap.xml">Sitemap</a>
+            <a href="https://rockfordresidentialplumbing.vercel.app/">Residential Plumbing Services</a>
+        </div>
+        <div class="footer-column">
+            <h3>Services</h3>
+            <a href="#">Drain Repair</a>
+            <a href="#">Water Heater Services</a>
+            <a href="#">Toilet Repair</a>
+            <a href="#">Faucet Installation</a>
+            <a href="#">Emergency Services</a>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-map-marker-alt"></i> 31 Greglynn St, Machesney Park, IL 61115, USA</p>
+            <p><i class="fas fa-phone"></i> (858) 726-5590</p>
+            <p><i class="fas fa-envelope"></i> plumbersinrockford@gmail.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2025 PlumbPro Services. All rights reserved.
+    </div>
+</footer>
+
+<script>
+
+document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const faqItem = button.parentElement;
+        const icon = button.querySelector('.icon');
+
+        // Toggle active class
+        faqItem.classList.toggle('active');
+
+        // Change icon from + to -
+        icon.textContent = faqItem.classList.contains('active') ? '−' : '+';
+    });
+});
+
+
+</script>
+
+
+
+</body>
+
+
+</html>

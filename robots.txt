@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: https://rockfordplumbers.github.io/rockfordresidentialplumbing/sitemap.xml
+Sitemap: https://rockfordplumbers.github.io/rockfordcommercialplumbing/sitemap.xml

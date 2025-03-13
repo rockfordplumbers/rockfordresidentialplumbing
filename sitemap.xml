@@ -1,45 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://rockfordplumbers.github.io/rockfordresidentialplumbing/</loc>
+        <loc>https://rockfordplumbers.github.io/rockfordcommercialplumbing/</loc>
         <priority>1.0</priority>
     </url>
-    
     <url>
-        <loc>https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/clogged-drain-repair</loc>
+        <loc>https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/water-leak-detection-service</loc>
+        <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/garbage-disposal-repair</loc>
+        <loc>https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/pipe-repair-and-installation</loc>
+        <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/shower-repair.html</loc>
+        <loc>https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/sewer-and-drain-cleaning-services</loc>
+        <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/tankless-heater-repair.html</loc>
+        <loc>https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/low-water-pressure-fixes</loc>
+        <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/toilet-repair.html</loc>
+        <loc>https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/pipelining-repair-and-installation</loc>
+        <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/water-softener-repair.html</loc>
+        <loc>https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/gas-line-repair-and-installation</loc>
+        <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/water-heater-repair.html</loc>
+        <loc>https://rockfordplumbers.github.io/rockfordcommercialplumbing/plumbing-experts-rockford</loc>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/tub-drain-repair.html</loc>
-    </url>
-    
-    <url>
-        <loc>https://rockfordplumbers.github.io/rockfordresidentialplumbing/plumbing-experts-rockford.html</loc>
+        <loc>https://rockfordplumbers.github.io/rockfordcommercialplumbing/plumbing-tips-seasonal</loc>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://rockfordplumbers.github.io/rockfordresidentialplumbing/plumbing-tips-seasonal.html</loc>
+        <loc>https://rockfordplumbers.github.io/rockfordcommercialplumbing/quick-plumbing-fix</loc>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://rockfordplumbers.github.io/rockfordresidentialplumbing/quick-plumbing-fix.html</loc>
-    </url>
-    <url>
-        <loc>https://rockfordplumbers.github.io/rockfordresidentialplumbing/rockford-emergency-plumbers.html</loc>
+        <loc>https://rockfordplumbers.github.io/rockfordcommercialplumbing/rockford-emergency-plumbers</loc>
+        <priority>0.7</priority>
     </url>
 </urlset>

@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="canonical" href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/sewer-and-drain-cleaning-services" />
+    <meta name="robots" content="index">
+    <link rel="icon" href="https://raw.githubusercontent.com/TintStudio/images/refs/heads/main/cropped-plumbers-in-rockford-180x180.webp" type="image/x-icon">
+    <title>Sewer and Drain Cleaning Services</title>
+    <style>
+
+        /* Reset and base styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  /* nav section*/
+  nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2563eb; /* Adjust background color */
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+ul li {
+  position: relative;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  display: block;
+}
+
+ul li .contact-btn {
+  background-color: white;
+  color: #2563eb;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+/* Ensure the dropdown container is inline */
+/* Ensures the dropdown container is inline */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style the dropdown button */
+.dropdown > a {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between text and arrow */
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+/* Dropdown arrow styling */
+.dropdown > a::after {
+  content: "▼"; /* Unicode down arrow */
+  font-size: 12px;
+  color: white;
+  position: relative;
+  top: 2px; /* Adjust to move it up */
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Rotate arrow when hovered */
+.dropdown:hover > a::after {
+  transform: rotate(180deg);
+}
+
+/* Existing dropdown menu styling */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 250px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  width: 100%;
+}
+
+.dropdown-menu li a {
+  color: black;
+  padding: 10px;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f4f4f4;
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('https://github.com/TintStudio/images/blob/main/plumber-installing-new-pipes-2.jpg?raw=true') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Overlay Effect */
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hero Content */
+.hero-content {
+  color: white;
+  text-align: left;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.hero-content h4 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.hero-content h1 {
+  font-size: 38px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+/* Call-To-Action Button */
+.btn-primary {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #007bff;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+/*Service Section*/
+/* Services Section */
+.services {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f4f4f4;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Services Grid */
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Service Box */
+
+.service-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.service-box i {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.service-box h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+}
+
+/*Why Choose us*/
+/* Why Choose Us Section */
+.why-choose-us {
+  text-align: center;
+  padding: 50px 20px;
+  background: #ffffff;
+}
+
+.why-choose-us h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Why Choose Us Grid */
+.why-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Why Box */
+.why-box {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.why-box i {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.why-box h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0a2e5c;
+}
+
+.why-box p {
+  font-size: 16px;
+  color: #333;
+}
+
+.why-box:hover {
+  transform: translateY(-5px);
+}
+
+/*footer*/
+
+
+      .footer {
+          background-color: #1E4ED8;
+          color: white;
+          padding: 30px 50px;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+      }
+      .footer-column {
+          max-width: 250px;
+      }
+      .footer h3 {
+          margin-bottom: 15px;
+      }
+      .footer p, .footer a {
+          color: white;
+          text-decoration: none;
+          display: block;
+          margin-bottom: 8px;
+      }
+      .footer .social-icons a {
+          display: inline-block;
+          margin-right: 10px;
+          font-size: 20px;
+          color: white;
+      }
+      .footer .social-icons a:hover {
+          color: #FFD700;
+      }
+      .footer-bottom {
+          text-align: center;
+          padding: 15px;
+          background-color: #153DB3;
+          color: white;
+          font-size: 14px;
+      }
+
+      /*Content Section*/
+      .plumbing-services {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plumbing-services h2 {
+  color: #0a3871;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.text {
+  flex: 1;
+}
+
+.text p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #0a3871;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #072b5a;
+}
+
+.image {
+  flex: 1;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 5px;
+  max-width: 400px;
+}
+
+/*Faqs Section*/
+.faq {
+  text-align: center;
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.faq h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.faq-question {
+  width: 100%;
+  background: #002c66;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question .icon {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.faq-answer {
+  display: none;
+  background: #f8f8f8;
+  padding: 15px;
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-item.active .faq-question .icon {
+  transform: rotate(45deg);
+}
+
+/*Article Section*/
+.articles-section {
+  
+  color:black;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.articles-section h2 {
+  font-size: 2.1em;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.articles-container {
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 2px;
+}
+
+.article-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  text-align: left;
+}
+
+
+.article-box h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.article-box p {
+  font-size: 1.1em;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.article-box ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0;
+  margin: 15px 0;
+  width: 100%;
+  overflow-wrap: break-word; /* Ensures long words wrap */
+}
+
+.article-box ul li {
+  width: 100%; /* Makes sure list items stay within the box */
+  word-wrap: break-word; /* Ensures words break properly */
+  white-space: normal; /* Prevents text from extending outside */
+  padding: 10px;
+  border-left: 4px solid #ffcc00;
+}
+
+.article-box ul li::before {
+  content: "✔"; /* Adds a checkmark as a bullet */
+  color: #27ae60; /* Green check color */
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.article-box ul li:hover {
+  background: #ececec;
+  transform: translateX(5px); /* Slight movement on hover */
+}
+
+
+.read-more {
+  display: inline-block;
+  margin-top: 15px;
+  color: #ffcc00;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+     <!--Nav Section-->
+     <nav>
+      <div class="logo">
+          <img src="https://raw.githubusercontent.com/TintStudio/images/refs/heads/main/plumbers-in-rockford.webp" alt="Logo">
+      </div>
+      <ul>
+      <li><a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/">Home</a></li>
+          
+          <li class="dropdown">
+              <a href="#">Commercial Plumbing </a>
+              <ul class="dropdown-menu">
+                  <li><a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/water-leak-detection-service">Water Leak Detection Service</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/pipe-repair-and-installation">Pipe Repair and Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/sewer-and-drain-cleaning-services">Sewer and Drain Cleaning Services</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/low-water-pressure-fixes">Low Water Pressure Fixes</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/pipelining-repair-and-installation">Pipelining Repair & Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/gas-line-repair-and-installation">Gas Line Repair and Installation</a></li>
+              </ul>
+          </li>
+          
+          
+  
+          <li class="dropdown">
+              <a href="#">Blog </a>
+              <ul class="dropdown-menu">
+                  <li><a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/plumbing-experts-rockford">Top Benefits of Rockford Plumbing Experts</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/plumbing-tips-seasonal">Essential Seasonal Plumbing Tips</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/quick-plumbing-fix">Fix Plumbing Issues Quickly</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/rockford-emergency-plumbers">Emergency Plumbers in Rockford</a></li>
+              </ul>
+          </li>
+  
+        
+          <li><a class="contact-btn" href="https://www.plumbersinrockford.com/contact/" rel="Nofollow">Contact Us</a></li>
+      </ul>
+  </nav>
+    
+    
+
+    <!--Hero Section-->
+
+    <section class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h4>Welcome to Plumbers in Rockford</h4>
+                <h1>Sewer and Drain Cleaning service in <br>Rockford, IL</h1>
+                <p>Clogged drains or sewer backups? Our professional sewer and drain cleaning clears blockages and restores proper flow. Call now for a hassle-free solution!                </p>
+                <a href="tel:858-726-5590" class="btn-primary">
+                    📞 Book An Appointment
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--Article Section-->
+
+<section class="articles-section">
+    <h2>
+      Sewer and Drain Cleaning Services: Keeping Your Plumbing System Clear</h2>
+        
+    <div class="articles-container">
+        
+        <!-- Clogged Drain Repair and Installation -->
+        <article class="article-box">
+          <h3>Common Causes of Sewer and Drain Clogs</h3>
+          <p>Clogs in sewer lines and drains often result from grease buildup, food waste, soap scum, and hair accumulation. Foreign objects, such as wipes and hygiene products, can also obstruct pipes, restricting water flow. Tree roots are another major issue, as they can infiltrate underground sewer lines, causing severe blockages.</p>
+      
+          <h3>Signs You Need Sewer and Drain Cleaning</h3>
+          <p>One of the first signs of a clogged drain is slow water drainage, which may worsen over time. Gurgling sounds from pipes or toilets indicate trapped air due to blockages. Foul odors coming from drains suggest decomposing debris, signaling the need for professional <a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/">cleaning services</a>.</p>
+      
+          <h3>DIY Drain Cleaning Methods</h3>
+          <p>Homeowners can try simple solutions to clear minor clogs before seeking professional help. Pouring hot water down the drain can help dissolve grease and soap residue. A mixture of baking soda and vinegar can break down organic materials, while using a plunger or drain snake may dislodge stubborn clogs.</p>
+      
+          <h3>Professional Sewer and Drain Cleaning Techniques</h3>
+          <p>For severe blockages, professionals use advanced tools to restore proper drainage. Hydro jetting involves high-pressure water streams that clear debris and buildup inside pipes. Video camera inspections help plumbers locate blockages and assess pipe conditions, ensuring precise cleaning without unnecessary damage.</p>
+      
+          <h3>Preventive Maintenance Tips</h3>
+          <p>Routine maintenance minimizes the risk of clogs and sewer backups. Avoid pouring grease, coffee grounds, or food scraps down the drain, as they contribute to buildup. Installing drain covers can prevent hair and debris from entering pipes, while scheduling annual professional cleaning ensures a long-lasting plumbing system.</p>
+      
+          <h3>Benefits of Regular Sewer and Drain Cleaning</h3>
+          <p>Regular cleaning improves water flow and prevents foul odors, keeping your home’s plumbing system in top condition. It reduces the risk of unexpected emergencies, saving homeowners from costly repairs. Proper maintenance also extends the lifespan of pipes, preventing premature replacements and water damage.</p>
+      
+          <h3>Choosing the Right Sewer and Drain Cleaning Service</h3>
+          <p>Selecting a reliable plumbing service ensures thorough and effective cleaning. Experienced professionals use state-of-the-art equipment to diagnose and clear blockages efficiently. A trustworthy company provides upfront pricing, emergency services, and long-term solutions tailored to your plumbing needs.</p>
+      
+          <h3>Why Professional Cleaning is Essential</h3>
+          <p>While DIY methods can handle minor clogs, professional cleaning ensures a complete and lasting solution. Experts identify underlying issues, such as pipe damage or root intrusion, that may cause recurring problems. Their expertise guarantees safe and effective cleaning without causing additional damage to your plumbing system.</p>
+      
+          <h3>Reliable Sewer and Drain Cleaning Services</h3>
+          <p>If you're experiencing frequent clogs, slow drainage, or sewer backups, professional assistance is the best solution. Our team offers expert sewer and drain cleaning services, utilizing advanced techniques for optimal results. Contact us today for a thorough inspection and <a href="https://www.plumbersinrockford.com/services/commercial-plumbing/sewer-and-drain-cleaning/">professional cleaning</a> to keep your plumbing system running smoothly.</p>
+          
+        </article>
+</section>
+
+    
+
+
+  
+
+     <!--Service Section-->
+     <section class="services">
+      <h2>Our Services</h2>
+      <div class="service-container">
+          <div class="service-box">
+              <i class="fas fa-hand-holding-water"></i>
+              <h3>Water Leak Detection Service</h3>
+              <p>Expert solutions to detect and fix water leaks, preventing damage and high bills.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/water-leak-detection-service" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-tools"></i>
+              <h3>Pipe Repair and Installation</h3>
+              <p>Professional pipe repair and installation services for reliable plumbing systems.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/pipe-repair-and-installation" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-seedling"></i>
+              <h3>Sewer and Drain Cleaning Services</h3>
+              <p>Thorough sewer and drain cleaning to prevent clogs and backups.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/sewer-and-drain-cleaning-services" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-tint"></i>
+              <h3>Low Water Pressure Fixes</h3>
+              <p>Effective solutions to improve water pressure and optimize flow.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/low-water-pressure-fixes" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-pipe"></i>
+              <h3>Pipelining Repair & Installation</h3>
+              <p>Durable pipelining repair and installation services for long-term plumbing solutions.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/pipelining-repair-and-installation" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-gas-pump"></i>
+              <h3>Gas Line Repair and Installation</h3>
+              <p>Safe and efficient gas line repair and installation services for your home or business.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/services/gas-line-repair-and-installation" class="btn">Read More</a>
+          </div>
+      </div>
+  </section>
+  
+
+
+
+
+
+
+
+
+
+
+<!--Faqs Section-->
+<section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+      
+      <div class="faq-item">
+        <button class="faq-question">What are the signs that my drain needs cleaning?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>Slow drainage, foul odors, gurgling sounds, frequent clogs, and water backups are common signs that your drain needs professional cleaning.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">How often should I have my drains professionally cleaned?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>It’s recommended to have your drains cleaned at least once a year to prevent buildup, clogs, and costly repairs.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">What causes sewer line blockages?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>Common causes include tree root intrusion, grease buildup, flushed debris, and pipe damage. Regular maintenance can help prevent severe blockages.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">Can I use chemical drain cleaners for clogs?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>While chemical cleaners may provide temporary relief, they can damage pipes over time. Professional drain cleaning is a safer and more effective solution.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">What is hydro jetting, and how does it work?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>Hydro jetting is a high-pressure water cleaning method that removes stubborn blockages, grease, and debris from sewer and drain lines, restoring proper flow.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">Do you offer emergency sewer and drain cleaning services?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>Yes, we provide 24/7 emergency sewer and drain cleaning services to quickly resolve urgent clogs and backups in Rockford.</p>
+        </div>
+    </div>
+    
+
+    </div>
+</section>|
+
+<!--Article Section-->
+
+
+
+
+<footer>
+    <div class="footer">
+        <div class="footer-column">
+            <h3>PlumbPro Services</h3>
+            <p>Professional plumbing services for residential and commercial properties. Available 24/7 for all your plumbing needs.</p>
+            <div class="social-icons">
+                <a href="https://web.facebook.com/plumbersinrockford"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/plumberrockford"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/plumbersinrockford/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/plumbersinrockford/"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#showservice">Services</a>
+            <a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/sitemap.xml">Sitemap</a>
+            <a href="https://rockfordresidentialplumbing.vercel.app/">Residential Plumbing Services</a>
+        </div>
+        <div class="footer-column">
+            <h3>Services</h3>
+            <a href="#">Drain Repair</a>
+            <a href="#">Water Heater Services</a>
+            <a href="#">Toilet Repair</a>
+            <a href="#">Faucet Installation</a>
+            <a href="#">Emergency Services</a>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-map-marker-alt"></i> 31 Greglynn St, Machesney Park, IL 61115, USA</p>
+            <p><i class="fas fa-phone"></i> (858) 726-5590</p>
+            <p><i class="fas fa-envelope"></i> plumbersinrockford@gmail.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2025 PlumbPro Services. All rights reserved.
+    </div>
+</footer>
+
+<script>
+
+document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const faqItem = button.parentElement;
+        const icon = button.querySelector('.icon');
+
+        // Toggle active class
+        faqItem.classList.toggle('active');
+
+        // Change icon from + to -
+        icon.textContent = faqItem.classList.contains('active') ? '−' : '+';
+    });
+});
+
+
+</script>
+
+
+
+</body>
+
+
+</html>
