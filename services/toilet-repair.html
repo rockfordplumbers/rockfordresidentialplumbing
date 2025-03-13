@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="canonical" href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/garbage-disposal-repair" />
+    <meta name="robots" content="index">
+    <link rel="icon" href="https://raw.githubusercontent.com/TintStudio/images/refs/heads/main/cropped-plumbers-in-rockford-180x180.webp" type="image/x-icon">
+    <title>Toilet Repair & Installation</title>
+    <style>
+
+        /* Reset and base styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  /* nav section*/
+  nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2563eb; /* Adjust background color */
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+ul li {
+  position: relative;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  display: block;
+}
+
+ul li .contact-btn {
+  background-color: white;
+  color: #2563eb;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+/* Ensure the dropdown container is inline */
+/* Ensures the dropdown container is inline */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style the dropdown button */
+.dropdown > a {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between text and arrow */
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+/* Dropdown arrow styling */
+.dropdown > a::after {
+  content: "▼"; /* Unicode down arrow */
+  font-size: 12px;
+  color: white;
+  position: relative;
+  top: 2px; /* Adjust to move it up */
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Rotate arrow when hovered */
+.dropdown:hover > a::after {
+  transform: rotate(180deg);
+}
+
+/* Existing dropdown menu styling */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 250px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  width: 100%;
+}
+
+.dropdown-menu li a {
+  color: black;
+  padding: 10px;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f4f4f4;
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('https://github.com/TintStudio/images/blob/main/plumber-installing-new-pipes-2.jpg?raw=true') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Overlay Effect */
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hero Content */
+.hero-content {
+  color: white;
+  text-align: left;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.hero-content h4 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.hero-content h1 {
+  font-size: 38px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+/* Call-To-Action Button */
+.btn-primary {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #007bff;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+/*Service Section*/
+/* Services Section */
+.services {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f4f4f4;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Services Grid */
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Service Box */
+
+.service-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.service-box i {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.service-box h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+}
+
+/*Why Choose us*/
+/* Why Choose Us Section */
+.why-choose-us {
+  text-align: center;
+  padding: 50px 20px;
+  background: #ffffff;
+}
+
+.why-choose-us h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Why Choose Us Grid */
+.why-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Why Box */
+.why-box {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.why-box i {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.why-box h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0a2e5c;
+}
+
+.why-box p {
+  font-size: 16px;
+  color: #333;
+}
+
+.why-box:hover {
+  transform: translateY(-5px);
+}
+
+/*footer*/
+
+
+      .footer {
+          background-color: #1E4ED8;
+          color: white;
+          padding: 30px 50px;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+      }
+      .footer-column {
+          max-width: 250px;
+      }
+      .footer h3 {
+          margin-bottom: 15px;
+      }
+      .footer p, .footer a {
+          color: white;
+          text-decoration: none;
+          display: block;
+          margin-bottom: 8px;
+      }
+      .footer .social-icons a {
+          display: inline-block;
+          margin-right: 10px;
+          font-size: 20px;
+          color: white;
+      }
+      .footer .social-icons a:hover {
+          color: #FFD700;
+      }
+      .footer-bottom {
+          text-align: center;
+          padding: 15px;
+          background-color: #153DB3;
+          color: white;
+          font-size: 14px;
+      }
+
+      /*Content Section*/
+      .plumbing-services {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plumbing-services h2 {
+  color: #0a3871;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.text {
+  flex: 1;
+}
+
+.text p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #0a3871;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #072b5a;
+}
+
+.image {
+  flex: 1;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 5px;
+  max-width: 400px;
+}
+
+/*Faqs Section*/
+.faq {
+  text-align: center;
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.faq h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.faq-question {
+  width: 100%;
+  background: #002c66;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question .icon {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.faq-answer {
+  display: none;
+  background: #f8f8f8;
+  padding: 15px;
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-item.active .faq-question .icon {
+  transform: rotate(45deg);
+}
+
+/*Article Section*/
+.articles-section {
+  
+  color:black;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.articles-section h2 {
+  font-size: 2.1em;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.articles-container {
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 2px;
+}
+
+.article-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  text-align: left;
+}
+
+
+.article-box h3 {
+  font-size: 1.8em;
+  margin-bottom: 14px;
+  margin-top: 12px;
+  color: black;
+  text-align: center; /* Centers the heading */
+}
+
+
+.article-box p {
+  font-size: 1.1em;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.article-box ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0;
+  margin: 15px 0;
+  width: 100%;
+  overflow-wrap: break-word; /* Ensures long words wrap */
+}
+
+.article-box ul li {
+  width: 100%; /* Makes sure list items stay within the box */
+  word-wrap: break-word; /* Ensures words break properly */
+  white-space: normal; /* Prevents text from extending outside */
+  padding: 10px;
+  border-left: 4px solid #ffcc00;
+}
+
+.article-box ul li::before {
+  content: "✔"; /* Adds a checkmark as a bullet */
+  color: #27ae60; /* Green check color */
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.article-box ul li:hover {
+  background: #ececec;
+  transform: translateX(5px); /* Slight movement on hover */
+}
+
+
+.read-more {
+  display: inline-block;
+  margin-top: 15px;
+  color: #ffcc00;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+     <!--Nav Section-->
+     <nav>
+      <div class="logo">
+          <img src="https://raw.githubusercontent.com/TintStudio/images/refs/heads/main/plumbers-in-rockford.webp" alt="Logo">
+      </div>
+      <ul>
+          <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/">Home</a></li>
+          
+          <li class="dropdown">
+              <a href="#">Residential Plumbing </a>
+              <ul class="dropdown-menu">
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/clogged-drain-repair">Clogged Drain Repair and Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/garbage-disposal-repair">Plumbing and Garbage Disposal Repair</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/shower-repair">Shower Repair and Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/tankless-heater-repair">Tankless Water Heater Repair and Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/toilet-repair">Toilet Repair & Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/water-softener-repair">Water Softener Repair and Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/water-heater-repair">Water Heater Repair & Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/tub-drain-repair">Tubs and Shower Drain Repair and Installation</a></li>
+              </ul>
+          </li>
+  
+          <li class="dropdown">
+              <a href="#">Blog </a>
+              <ul class="dropdown-menu">
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/plumbing-experts-rockford">Top Benefits of Rockford Plumbing Experts</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/plumbing-tips-seasonal">Essential Seasonal Plumbing Tips</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/quick-plumbing-fix">Fix Plumbing Issues Quickly</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/rockford-emergency-plumbers">Emergency Plumbers in Rockford</a></li>
+              </ul>
+          </li>
+  
+        
+          <li><a class="contact-btn" href="https://www.plumbersinrockford.com/contact/" rel="Nofollow">Contact Us</a></li>
+      </ul>
+  </nav>
+    
+    
+    
+
+    <!--Hero Section-->
+
+    <section class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h4>Welcome to Plumbers in Rockford</h4>
+                <h1>24 Hour Toilet Repair & Installation service in Rockford, IL</h1>
+                <p>A leaking or clogged toilet can be a nightmare! Our skilled plumbers provide fast toilet repair and installation to keep your bathroom running smoothly. Don’t wait—call us now for a hassle-free fix!                </p>
+                <a href="tel:858-726-5590" class="btn-primary">
+                    📞 Book An Appointment
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--Article Section-->
+
+<section class="articles-section">
+    <h2>
+      Toilet Repair & Installation: A Complete Guide</h2>
+        
+    <div class="articles-container">
+        
+        <!-- Clogged Drain Repair and Installation -->
+        <article class="article-box">
+          <p>A properly functioning toilet is essential for any home or business. Whether you’re dealing with leaks, clogs, or poor flushing performance, toilet issues can be frustrating and inconvenient. Proper installation and timely repairs ensure efficiency, water conservation, and long-term durability. Understanding common problems and solutions can help homeowners and businesses maintain their plumbing systems effectively.</p><br>
+
+          <h3>Common Toilet Problems and Their Causes</h3><br>
+          <p>Toilets can experience a variety of issues over time, leading to inefficiency and costly water bills. One common problem is a running toilet, often caused by a faulty flapper or fill valve. Clogs are another frequent issue, usually due to excessive toilet paper usage or foreign objects being flushed. Weak flushing power can result from mineral buildup in the rim jets or problems with the fill valve.</p><br>
+          
+          <h3>Signs Your Toilet Needs Repair</h3><br>
+          <p>Recognizing early warning signs of toilet problems can help prevent more severe plumbing issues. If your toilet constantly runs or takes too long to refill, it may be time to replace worn-out components. Water pooling around the base of the toilet indicates a potential seal or wax ring failure. Frequent clogs or inconsistent flushing performance may point to internal mechanism issues or pipe blockages.</p><br>
+          
+          <h3>Troubleshooting Toilet Issues</h3><br>
+          <p>Some toilet issues can be resolved without professional assistance. If your toilet runs continuously, adjusting the chain length on the flapper or replacing a damaged flapper may solve the problem. For minor clogs, using a plunger or an auger can clear the obstruction. If water leaks from the base, tightening the bolts securing the toilet to the floor or replacing the wax ring can restore a proper seal.</p><br>
+          
+          <h3>When to Replace a Toilet Instead of Repairing</h3><br>
+          <p>While some toilet problems can be fixed, there are situations where replacing the entire unit is more cost-effective. If your toilet is over 15 years old and frequently requires repairs, upgrading to a modern, water-efficient model may be beneficial. Cracked porcelain or severe leaks are other indicators that a replacement is the best solution. Additionally, switching to a low-flow or dual-flush toilet can save water and reduce utility bills.</p><br>
+          
+          <h3>Steps for Proper Toilet Installation</h3><br>
+          <p>Installing a new toilet requires careful preparation and precision. The first step is shutting off the water supply and removing the old toilet by disconnecting the bolts and wax seal. Next, a new wax ring is placed on the floor flange to create a secure seal. After positioning the new toilet over the wax ring, bolts are tightened, and the water supply is reconnected. Finally, testing for leaks and adjusting water levels ensure proper operation.</p><br>
+          
+          <h3>Choosing the Right Toilet for Your Home</h3><br>
+          <p>Selecting the right toilet depends on factors such as space availability, efficiency, and design preference. Standard one-piece and two-piece toilets offer durability and affordability, while wall-mounted options provide a modern, space-saving solution. Water-saving models, such as dual-flush and pressure-assisted toilets, help conserve water while maintaining strong flushing performance.</p><br>
+          
+          <h3>The Importance of Professional Toilet Repair Services</h3><br>
+          <p>While DIY repairs can fix minor <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/">toilet issues</a>, professional services are essential for complex problems. Licensed plumbers have the expertise to handle leak detection, toilet replacements, and sewer line inspections. Professional repairs also ensure compliance with plumbing codes, preventing long-term issues such as improper drainage and water waste.</p><br>
+          
+          <h3>Maintaining Your Toilet for Long-Term Performance</h3><br>
+          <p>Regular toilet maintenance can extend its lifespan and prevent costly repairs. Cleaning the toilet bowl and tank with non-abrasive cleaners helps prevent mineral buildup. Checking and replacing worn-out components, such as flappers and fill valves, ensures efficient operation. Additionally, avoiding flushing non-biodegradable items reduces the risk of clogs and sewer backups.</p><br>
+          
+          <h3>Why Choose Our Toilet Repair & Installation Services?</h3><br>
+          <p>If you're experiencing toilet issues or need a professional installation, our team is ready to assist. We provide expert repair services for all types of toilets, ensuring efficient and long-lasting results. Our installation services guarantee proper setup, preventing leaks and maximizing water efficiency. Contact us today for <a href="https://www.plumbersinrockford.com/services/residential-plumbing/toilet-repair/">reliable toilet repair</a> and installation solutions.</p><br>
+          
+          
+        
+        </article>
+
+
+    </section>
+
+     <!--Service Section-->
+     <section class="services">
+      <h2>Our Services</h2>
+      <div class="service-container">
+          <div class="service-box">
+              <i class="fas fa-hand-holding-water"></i>
+              <h3>Clogged Drain Repair</h3>
+              <p>Expert solutions to clear clogged drains and restore smooth water flow.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/clogged-drain-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-trash-alt"></i>
+              <h3>Garbage Disposal Repair</h3>
+              <p>Reliable garbage disposal repair to keep your kitchen running efficiently.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/garbage-disposal-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-shower"></i>
+              <h3>Shower Repair & Installation</h3>
+              <p>Professional shower repair and installation for a perfect bathing experience.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/shower-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-burn"></i>
+              <h3>Tankless Water Heater Repair</h3>
+              <p>Efficient tankless water heater repairs to ensure continuous hot water.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/tankless-heater-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-toilet"></i>
+              <h3>Toilet Repair & Installation</h3>
+              <p>Dependable toilet repair and installation services for a hassle-free bathroom.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/toilet-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-water"></i>
+              <h3>Water Softener Repair</h3>
+              <p>Expert water softener repair services for clean and scale-free water.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/water-softener-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-tint"></i>
+              <h3>Water Heater Repair</h3>
+              <p>Quick and reliable water heater repairs to keep your water warm.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/water-heater-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-wrench"></i>
+              <h3>Tubs & Drain Repair</h3>
+              <p>Fix leaky tubs and drains efficiently to prevent water damage.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/tub-drain-repair" class="btn">Read More</a>
+          </div>
+      </div>
+  </section>
+
+
+
+
+
+
+<!--Faqs Section-->
+<section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-question">Why does my toilet keep running after flushing?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>A running toilet is often caused by a faulty flapper, a misaligned float, or a worn-out fill valve. Replacing the flapper or adjusting the float can help, but if the issue continues, contact a professional plumber for repair.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">What should I do if my toilet is clogged?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>Try using a plunger to clear the blockage. If that doesn’t work, a toilet auger can help. Avoid flushing multiple times, as this may cause overflow. For severe clogs, professional drain cleaning may be required.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">How do I know if my toilet needs to be replaced?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>Signs that your toilet needs replacement include frequent clogging, cracks in the bowl or tank, continuous leaks, and inefficient flushing. If your toilet is outdated or constantly needing repairs, installing a new one may be more cost-effective.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">Can I install a new toilet myself?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>Toilet installation requires proper sealing, secure mounting, and plumbing connections. While a DIY install is possible, hiring a professional ensures proper alignment and prevents leaks or future issues.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">How much does it cost to repair or replace a toilet?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>Repair costs depend on the issue, while replacement costs vary based on the toilet model and installation complexity. Contact our Rockford plumbing team for a free estimate.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">What causes a toilet to leak at the base?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>A leaking toilet base is often due to a worn-out wax ring, loose bolts, or cracks in the toilet. If tightening the bolts doesn’t stop the leak, the wax ring may need to be replaced by a professional.</p>
+        </div>
+    </div>
+    
+    
+    </div>
+</section>|
+
+<!--Article Section-->
+
+
+
+
+<footer>
+    <div class="footer">
+        <div class="footer-column">
+            <h3>PlumbPro Services</h3>
+            <p>Professional plumbing services for residential and commercial properties. Available 24/7 for all your plumbing needs.</p>
+            <div class="social-icons">
+                <a href="https://web.facebook.com/plumbersinrockford"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/plumberrockford"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/plumbersinrockford/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/plumbersinrockford/"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#showservice">Services</a>
+            <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/sitemap.xml">Sitemap</a>
+            <a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/">Commercial Plumbing</a>
+        </div>
+        <div class="footer-column">
+            <h3>Services</h3>
+            <a href="#">Drain Repair</a>
+            <a href="#">Water Heater Services</a>
+            <a href="#">Toilet Repair</a>
+            <a href="#">Faucet Installation</a>
+            <a href="#">Emergency Services</a>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-map-marker-alt"></i> 31 Greglynn St, Machesney Park, IL 61115, USA</p>
+            <p><i class="fas fa-phone"></i> (858) 726-5590</p>
+            <p><i class="fas fa-envelope"></i> plumbersinrockford@gmail.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2025 PlumbPro Services. All rights reserved.
+    </div>
+</footer>
+
+<script>
+
+document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const faqItem = button.parentElement;
+        const icon = button.querySelector('.icon');
+
+        // Toggle active class
+        faqItem.classList.toggle('active');
+
+        // Change icon from + to -
+        icon.textContent = faqItem.classList.contains('active') ? '−' : '+';
+    });
+});
+
+
+</script>
+
+
+
+</body>
+
+
+</html>

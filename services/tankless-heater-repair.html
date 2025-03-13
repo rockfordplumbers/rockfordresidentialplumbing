@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="canonical" href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/garbage-disposal-repair" />
+    <meta name="robots" content="index">
+    <link rel="icon" href="https://raw.githubusercontent.com/TintStudio/images/refs/heads/main/cropped-plumbers-in-rockford-180x180.webp" type="image/x-icon">
+    <title>Tankless Water Heater Repair and Installation</title>
+    <style>
+
+        /* Reset and base styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  /* nav section*/
+  nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2563eb; /* Adjust background color */
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+ul li {
+  position: relative;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  display: block;
+}
+
+ul li .contact-btn {
+  background-color: white;
+  color: #2563eb;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+/* Ensure the dropdown container is inline */
+/* Ensures the dropdown container is inline */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style the dropdown button */
+.dropdown > a {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between text and arrow */
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+/* Dropdown arrow styling */
+.dropdown > a::after {
+  content: "▼"; /* Unicode down arrow */
+  font-size: 12px;
+  color: white;
+  position: relative;
+  top: 2px; /* Adjust to move it up */
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Rotate arrow when hovered */
+.dropdown:hover > a::after {
+  transform: rotate(180deg);
+}
+
+/* Existing dropdown menu styling */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 250px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  width: 100%;
+}
+
+.dropdown-menu li a {
+  color: black;
+  padding: 10px;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f4f4f4;
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('https://github.com/TintStudio/images/blob/main/plumber-installing-new-pipes-2.jpg?raw=true') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Overlay Effect */
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hero Content */
+.hero-content {
+  color: white;
+  text-align: left;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.hero-content h4 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.hero-content h1 {
+  font-size: 38px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+/* Call-To-Action Button */
+.btn-primary {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #007bff;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+/*Service Section*/
+/* Services Section */
+.services {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f4f4f4;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Services Grid */
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Service Box */
+
+.service-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.service-box i {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.service-box h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+}
+
+/*Why Choose us*/
+/* Why Choose Us Section */
+.why-choose-us {
+  text-align: center;
+  padding: 50px 20px;
+  background: #ffffff;
+}
+
+.why-choose-us h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Why Choose Us Grid */
+.why-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Why Box */
+.why-box {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.why-box i {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.why-box h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0a2e5c;
+}
+
+.why-box p {
+  font-size: 16px;
+  color: #333;
+}
+
+.why-box:hover {
+  transform: translateY(-5px);
+}
+
+/*footer*/
+
+
+      .footer {
+          background-color: #1E4ED8;
+          color: white;
+          padding: 30px 50px;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+      }
+      .footer-column {
+          max-width: 250px;
+      }
+      .footer h3 {
+          margin-bottom: 15px;
+      }
+      .footer p, .footer a {
+          color: white;
+          text-decoration: none;
+          display: block;
+          margin-bottom: 8px;
+      }
+      .footer .social-icons a {
+          display: inline-block;
+          margin-right: 10px;
+          font-size: 20px;
+          color: white;
+      }
+      .footer .social-icons a:hover {
+          color: #FFD700;
+      }
+      .footer-bottom {
+          text-align: center;
+          padding: 15px;
+          background-color: #153DB3;
+          color: white;
+          font-size: 14px;
+      }
+
+      /*Content Section*/
+      .plumbing-services {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plumbing-services h2 {
+  color: #0a3871;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.text {
+  flex: 1;
+}
+
+.text p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #0a3871;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #072b5a;
+}
+
+.image {
+  flex: 1;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 5px;
+  max-width: 400px;
+}
+
+/*Faqs Section*/
+.faq {
+  text-align: center;
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.faq h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.faq-question {
+  width: 100%;
+  background: #002c66;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question .icon {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.faq-answer {
+  display: none;
+  background: #f8f8f8;
+  padding: 15px;
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-item.active .faq-question .icon {
+  transform: rotate(45deg);
+}
+
+/*Article Section*/
+.articles-section {
+  
+  color:black;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.articles-section h2 {
+  font-size: 2.1em;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.articles-container {
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 2px;
+}
+
+.article-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  text-align: left;
+}
+
+
+.article-box h3 {
+  font-size: 1.8em;
+  margin-bottom: 14px;
+  margin-top: 12px;
+  color: black;
+  text-align: center; /* Centers the heading */
+}
+
+
+.article-box p {
+  font-size: 1.1em;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.article-box ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0;
+  margin: 15px 0;
+  width: 100%;
+  overflow-wrap: break-word; /* Ensures long words wrap */
+}
+
+.article-box ul li {
+  width: 100%; /* Makes sure list items stay within the box */
+  word-wrap: break-word; /* Ensures words break properly */
+  white-space: normal; /* Prevents text from extending outside */
+  padding: 10px;
+  border-left: 4px solid #ffcc00;
+}
+
+.article-box ul li::before {
+  content: "✔"; /* Adds a checkmark as a bullet */
+  color: #27ae60; /* Green check color */
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.article-box ul li:hover {
+  background: #ececec;
+  transform: translateX(5px); /* Slight movement on hover */
+}
+
+
+.read-more {
+  display: inline-block;
+  margin-top: 15px;
+  color: #ffcc00;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+     <!--Nav Section-->
+     <nav>
+      <div class="logo">
+          <img src="https://raw.githubusercontent.com/TintStudio/images/refs/heads/main/plumbers-in-rockford.webp" alt="Logo">
+      </div>
+      <ul>
+          <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/">Home</a></li>
+          
+          <li class="dropdown">
+              <a href="#">Residential Plumbing </a>
+              <ul class="dropdown-menu">
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/clogged-drain-repair">Clogged Drain Repair and Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/garbage-disposal-repair">Plumbing and Garbage Disposal Repair</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/shower-repair">Shower Repair and Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/tankless-heater-repair">Tankless Water Heater Repair and Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/toilet-repair">Toilet Repair & Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/water-softener-repair">Water Softener Repair and Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/water-heater-repair">Water Heater Repair & Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/tub-drain-repair">Tubs and Shower Drain Repair and Installation</a></li>
+              </ul>
+          </li>
+  
+          <li class="dropdown">
+              <a href="#">Blog </a>
+              <ul class="dropdown-menu">
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/plumbing-experts-rockford">Top Benefits of Rockford Plumbing Experts</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/plumbing-tips-seasonal">Essential Seasonal Plumbing Tips</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/quick-plumbing-fix">Fix Plumbing Issues Quickly</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/rockford-emergency-plumbers">Emergency Plumbers in Rockford</a></li>
+              </ul>
+          </li>
+  
+        
+          <li><a class="contact-btn" href="https://www.plumbersinrockford.com/contact/" rel="Nofollow">Contact Us</a></li>
+      </ul>
+  </nav>
+    
+    
+
+    <!--Hero Section-->
+
+    <section class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h4>Welcome to Plumbers in Rockford</h4>
+                <h1>24 Hour Tankless Water Heater Repair and Installation service in Rockford, IL</h1>
+                <p>Enjoy endless hot water with our tankless water heater services! Whether you need a quick repair or a brand-new installation, our experts ensure efficient and reliable solutions. Call now and upgrade your home’s hot water system today!</p>
+                <a href="tel:858-726-5590" class="btn-primary">
+                    📞 Book An Appointment
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--Article Section-->
+
+<section class="articles-section">
+    <h2>
+      Tankless Water Heater Repair and Installation: A Comprehensive Guide</h2>
+        
+    <div class="articles-container">
+        
+        <!-- Clogged Drain Repair and Installation -->
+        <article class="article-box">
+          <p>Tankless water heaters have revolutionized modern home plumbing by providing hot water on demand while saving energy and space. Unlike traditional water heaters that store hot water in a tank, these systems heat water only when needed, reducing energy consumption. However, like any appliance, they require regular maintenance and occasional repairs to function optimally. Understanding installation requirements and potential repair issues can help homeowners make informed decisions about their water heating systems.</p>
+
+          <h3>Benefits of a Tankless Water Heater</h3>
+          <p>Tankless water heaters offer several advantages over conventional models, making them an attractive option for homeowners. One of the biggest benefits is energy efficiency. Since these systems heat water only when needed, they eliminate standby heat loss, resulting in lower utility bills. Additionally, their compact size frees up space, making them ideal for small homes or apartments. Lastly, tankless units provide a continuous hot water supply, ensuring you never run out during showers or household chores.</p>
+          
+          <h3>Common Issues with Tankless Water Heaters</h3>
+          <p>While tankless water heaters are generally reliable, they can experience problems over time. Mineral buildup is a common issue, especially in areas with hard water. This buildup can reduce efficiency and lead to overheating. Another frequent problem is system overload, which happens when multiple appliances demand hot water simultaneously. Additionally, ignition failures can prevent the unit from heating water properly, often caused by gas supply issues or faulty components.</p>
+          
+          <h3>Signs Your Tankless Water Heater Needs Repair</h3>
+          <p>Detecting problems early can prevent costly repairs and system failures. One clear sign of trouble is inconsistent water temperature, which may indicate mineral buildup or a failing heating element. Reduced water pressure could point to clogged filters or a malfunctioning unit. Unusual noises, such as rumbling or clicking, often signal a mechanical problem that needs professional attention.</p>
+          
+          <h3>Troubleshooting Common Tankless Water Heater Problems</h3>
+          <p>Some minor issues with a <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/">tankless water heater</a> can be resolved without professional assistance. If you experience fluctuating water temperatures, flushing the unit with a descaling solution can remove mineral deposits. In cases of low water pressure, cleaning or replacing clogged filters may restore normal flow. If your system isn’t igniting, check the gas supply and ensure there are no obstructions in the venting system.</p>
+          
+          <h3>Installation Requirements for Tankless Water Heaters</h3>
+          <p>Proper installation is key to the long-term performance of a tankless water heater. These systems require a dedicated gas line or electric circuit with the appropriate voltage. Adequate ventilation is also necessary to prevent carbon monoxide buildup and ensure safe operation. Additionally, correct placement near water supply lines helps maintain efficiency and prevents unnecessary heat loss.</p>
+          
+          <h3>Choosing the Right Tankless Water Heater for Your Home</h3>
+          <p>Selecting the right tankless water heater depends on household size, water usage, and available power sources. Gas-powered models are ideal for homes with high water demand, while electric units work well in smaller residences. Additionally, choosing a unit with the appropriate flow rate ensures sufficient hot water supply for simultaneous uses, such as running a shower and dishwasher.</p>
+          
+          <h3>The Importance of Regular Maintenance</h3>
+          <p>Routine maintenance extends the lifespan of a tankless water heater and enhances performance. Flushing the unit every six to twelve months prevents mineral buildup, especially in areas with hard water. Checking and cleaning air intake and exhaust vents ensures proper airflow and combustion. Inspecting electrical and gas connections regularly helps prevent safety hazards and improves efficiency.</p>
+          
+          <h3>Professional Tankless Water Heater Repair Services</h3>
+          <p>While minor issues can be handled with DIY solutions, professional repair services are essential for complex problems. Licensed plumbers can diagnose and repair issues such as gas leaks, faulty sensors, and malfunctioning heating elements. They also provide system inspections to detect potential problems before they escalate, ensuring the unit remains reliable.</p>
+          
+          <h3>Why Choose Our Tankless Water Heater Services?</h3>
+          <p>If you're experiencing issues with your tankless water heater or need a new installation, our expert team is here to help. We specialize in diagnosing and repairing all major brands, ensuring your system operates efficiently. Our installation services guarantee proper setup, compliance with safety regulations, and optimal performance. Contact us today for professional, reliable <a href="https://www.plumbersinrockford.com/services/residential-plumbing/tankless-water-heater-services/">tankless water heater services</aa>.</p>
+          
+        
+        </article>
+
+
+    </section>
+
+     <!--Service Section-->
+     <section class="services">
+      <h2>Our Services</h2>
+      <div class="service-container">
+          <div class="service-box">
+              <i class="fas fa-hand-holding-water"></i>
+              <h3>Clogged Drain Repair</h3>
+              <p>Expert solutions to clear clogged drains and restore smooth water flow.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/clogged-drain-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-trash-alt"></i>
+              <h3>Garbage Disposal Repair</h3>
+              <p>Reliable garbage disposal repair to keep your kitchen running efficiently.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/garbage-disposal-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-shower"></i>
+              <h3>Shower Repair & Installation</h3>
+              <p>Professional shower repair and installation for a perfect bathing experience.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/shower-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-burn"></i>
+              <h3>Tankless Water Heater Repair</h3>
+              <p>Efficient tankless water heater repairs to ensure continuous hot water.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/tankless-heater-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-toilet"></i>
+              <h3>Toilet Repair & Installation</h3>
+              <p>Dependable toilet repair and installation services for a hassle-free bathroom.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/toilet-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-water"></i>
+              <h3>Water Softener Repair</h3>
+              <p>Expert water softener repair services for clean and scale-free water.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/water-softener-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-tint"></i>
+              <h3>Water Heater Repair</h3>
+              <p>Quick and reliable water heater repairs to keep your water warm.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/water-heater-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-wrench"></i>
+              <h3>Tubs & Drain Repair</h3>
+              <p>Fix leaky tubs and drains efficiently to prevent water damage.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/tub-drain-repair" class="btn">Read More</a>
+          </div>
+      </div>
+  </section>
+
+
+
+
+
+
+<!--Faqs Section-->
+<section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-question">Why is my tankless water heater not producing hot water?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>This could be due to a power issue, gas supply problems, a clogged filter, or a faulty heating element. Try resetting the unit, checking the gas or electrical connections, and ensuring there are no blockages. If the problem persists, contact a professional plumber.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">How often should I service my tankless water heater?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>It's recommended to service your tankless water heater annually. Regular maintenance includes flushing the system to remove mineral buildup, checking the filter, and inspecting the heating elements for efficiency.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">Why does my tankless water heater shut off during use?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>This could be caused by an overloaded system, insufficient gas supply, or scale buildup restricting water flow. Reduce the number of simultaneous water uses, ensure gas pressure is adequate, or schedule a professional inspection.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">Can I install a tankless water heater myself?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>While it's possible, installing a tankless water heater requires proper gas or electrical connections, venting, and water line modifications. It’s best to hire a licensed plumber to ensure safe and efficient installation.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">How long does a tankless water heater last?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>With proper maintenance, a tankless water heater can last 20+ years. Regular flushing and filter cleaning help extend its lifespan.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">Is a tankless water heater more energy-efficient?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>Yes, tankless water heaters heat water only when needed, reducing energy waste compared to traditional tank heaters. This can lower utility bills and improve efficiency.</p>
+        </div>
+    </div>
+    
+    </div>
+</section>|
+
+<!--Article Section-->
+
+
+
+
+<footer>
+    <div class="footer">
+        <div class="footer-column">
+            <h3>PlumbPro Services</h3>
+            <p>Professional plumbing services for residential and commercial properties. Available 24/7 for all your plumbing needs.</p>
+            <div class="social-icons">
+                <a href="https://web.facebook.com/plumbersinrockford"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/plumberrockford"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/plumbersinrockford/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/plumbersinrockford/"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#showservice">Services</a>
+            <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/sitemap.xml">Sitemap</a>
+            <a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/">Commercial Plumbing</a>
+        </div>
+        <div class="footer-column">
+            <h3>Services</h3>
+            <a href="#">Drain Repair</a>
+            <a href="#">Water Heater Services</a>
+            <a href="#">Toilet Repair</a>
+            <a href="#">Faucet Installation</a>
+            <a href="#">Emergency Services</a>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-map-marker-alt"></i> 31 Greglynn St, Machesney Park, IL 61115, USA</p>
+            <p><i class="fas fa-phone"></i> (858) 726-5590</p>
+            <p><i class="fas fa-envelope"></i> plumbersinrockford@gmail.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2025 PlumbPro Services. All rights reserved.
+    </div>
+</footer>
+
+<script>
+
+document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const faqItem = button.parentElement;
+        const icon = button.querySelector('.icon');
+
+        // Toggle active class
+        faqItem.classList.toggle('active');
+
+        // Change icon from + to -
+        icon.textContent = faqItem.classList.contains('active') ? '−' : '+';
+    });
+});
+
+
+</script>
+
+
+
+</body>
+
+
+</html>

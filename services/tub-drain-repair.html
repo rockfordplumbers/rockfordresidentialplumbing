@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="canonical" href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/tub-drain-repair" />
+    <meta name="robots" content="index">
+    <link rel="icon" href="https://raw.githubusercontent.com/TintStudio/images/refs/heads/main/cropped-plumbers-in-rockford-180x180.webp" type="image/x-icon">
+    <title>Tubs and Shower Drain Repair and Installation</title>
+    <style>
+
+        /* Reset and base styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  /* nav section*/
+  nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2563eb; /* Adjust background color */
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+ul li {
+  position: relative;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  display: block;
+}
+
+ul li .contact-btn {
+  background-color: white;
+  color: #2563eb;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+/* Ensure the dropdown container is inline */
+/* Ensures the dropdown container is inline */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style the dropdown button */
+.dropdown > a {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between text and arrow */
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+/* Dropdown arrow styling */
+.dropdown > a::after {
+  content: "▼"; /* Unicode down arrow */
+  font-size: 12px;
+  color: white;
+  position: relative;
+  top: 2px; /* Adjust to move it up */
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Rotate arrow when hovered */
+.dropdown:hover > a::after {
+  transform: rotate(180deg);
+}
+
+/* Existing dropdown menu styling */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 250px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  width: 100%;
+}
+
+.dropdown-menu li a {
+  color: black;
+  padding: 10px;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f4f4f4;
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('https://github.com/TintStudio/images/blob/main/plumber-installing-new-pipes-2.jpg?raw=true') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Overlay Effect */
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hero Content */
+.hero-content {
+  color: white;
+  text-align: left;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.hero-content h4 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.hero-content h1 {
+  font-size: 38px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+/* Call-To-Action Button */
+.btn-primary {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #007bff;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+/*Service Section*/
+/* Services Section */
+.services {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f4f4f4;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Services Grid */
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Service Box */
+
+.service-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.service-box i {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.service-box h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+}
+
+/*Why Choose us*/
+/* Why Choose Us Section */
+.why-choose-us {
+  text-align: center;
+  padding: 50px 20px;
+  background: #ffffff;
+}
+
+.why-choose-us h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Why Choose Us Grid */
+.why-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Why Box */
+.why-box {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.why-box i {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.why-box h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0a2e5c;
+}
+
+.why-box p {
+  font-size: 16px;
+  color: #333;
+}
+
+.why-box:hover {
+  transform: translateY(-5px);
+}
+
+/*footer*/
+
+
+      .footer {
+          background-color: #1E4ED8;
+          color: white;
+          padding: 30px 50px;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+      }
+      .footer-column {
+          max-width: 250px;
+      }
+      .footer h3 {
+          margin-bottom: 15px;
+      }
+      .footer p, .footer a {
+          color: white;
+          text-decoration: none;
+          display: block;
+          margin-bottom: 8px;
+      }
+      .footer .social-icons a {
+          display: inline-block;
+          margin-right: 10px;
+          font-size: 20px;
+          color: white;
+      }
+      .footer .social-icons a:hover {
+          color: #FFD700;
+      }
+      .footer-bottom {
+          text-align: center;
+          padding: 15px;
+          background-color: #153DB3;
+          color: white;
+          font-size: 14px;
+      }
+
+      /*Content Section*/
+      .plumbing-services {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plumbing-services h2 {
+  color: #0a3871;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.text {
+  flex: 1;
+}
+
+.text p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #0a3871;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #072b5a;
+}
+
+.image {
+  flex: 1;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 5px;
+  max-width: 400px;
+}
+
+/*Faqs Section*/
+.faq {
+  text-align: center;
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.faq h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.faq-question {
+  width: 100%;
+  background: #002c66;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question .icon {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.faq-answer {
+  display: none;
+  background: #f8f8f8;
+  padding: 15px;
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-item.active .faq-question .icon {
+  transform: rotate(45deg);
+}
+
+/*Article Section*/
+.articles-section {
+  
+  color:black;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.articles-section h2 {
+  font-size: 2.1em;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.articles-container {
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 2px;
+}
+
+.article-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  text-align: left;
+}
+
+
+.article-box h3 {
+  font-size: 1.8em;
+  margin-bottom: 14px;
+  margin-top: 12px;
+  color: black;
+  text-align: center; /* Centers the heading */
+}
+
+
+.article-box p {
+  font-size: 1.1em;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.article-box ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0;
+  margin: 15px 0;
+  width: 100%;
+  overflow-wrap: break-word; /* Ensures long words wrap */
+}
+
+.article-box ul li {
+  width: 100%; /* Makes sure list items stay within the box */
+  word-wrap: break-word; /* Ensures words break properly */
+  white-space: normal; /* Prevents text from extending outside */
+  padding: 10px;
+  border-left: 4px solid #ffcc00;
+}
+
+.article-box ul li::before {
+  content: "✔"; /* Adds a checkmark as a bullet */
+  color: #27ae60; /* Green check color */
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.article-box ul li:hover {
+  background: #ececec;
+  transform: translateX(5px); /* Slight movement on hover */
+}
+
+
+.read-more {
+  display: inline-block;
+  margin-top: 15px;
+  color: #ffcc00;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+     <!--Nav Section-->
+     <nav>
+      <div class="logo">
+          <img src="https://raw.githubusercontent.com/TintStudio/images/refs/heads/main/plumbers-in-rockford.webp" alt="Logo">
+      </div>
+      <ul>
+          <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/">Home</a></li>
+          
+          <li class="dropdown">
+              <a href="#">Residential Plumbing </a>
+              <ul class="dropdown-menu">
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/clogged-drain-repair">Clogged Drain Repair and Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/garbage-disposal-repair">Plumbing and Garbage Disposal Repair</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/shower-repair">Shower Repair and Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/tankless-heater-repair">Tankless Water Heater Repair and Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/toilet-repair">Toilet Repair & Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/water-softener-repair">Water Softener Repair and Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/water-heater-repair">Water Heater Repair & Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/tub-drain-repair">Tubs and Shower Drain Repair and Installation</a></li>
+              </ul>
+          </li>
+  
+          <li class="dropdown">
+              <a href="#">Blog </a>
+              <ul class="dropdown-menu">
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/plumbing-experts-rockford">Top Benefits of Rockford Plumbing Experts</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/plumbing-tips-seasonal">Essential Seasonal Plumbing Tips</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/quick-plumbing-fix">Fix Plumbing Issues Quickly</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/rockford-emergency-plumbers">Emergency Plumbers in Rockford</a></li>
+              </ul>
+          </li>
+  
+        
+          <li><a class="contact-btn" href="https://www.plumbersinrockford.com/contact/" rel="Nofollow">Contact Us</a></li>
+      </ul>
+  </nav>
+    
+    
+
+    <!--Hero Section-->
+
+    <section class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h4>Welcome to Plumbers in Rockford</h4>
+                <h1>24 Hour Tubs and Shower Drain Repair and Installation service in Rockford, IL</h1>
+                <p>Slow or clogged drains ruining your shower experience? Our experts provide tub and shower drain repair and installation to keep your bathroom functioning flawlessly. Call us today for quick and efficient service!</p>
+                <a href="tel:858-726-5590" class="btn-primary">
+                    📞 Book An Appointment
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--Article Section-->
+
+<section class="articles-section">
+    <h2>
+      Tubs and Shower Drain Repair & Installation: A Comprehensive Guide</h2>
+        
+    <div class="articles-container">
+        
+        <!-- Clogged Drain Repair and Installation -->
+        <article class="article-box">
+          <p>Tubs and showers are essential fixtures in any home, and their drains play a crucial role in maintaining proper water flow. Over time, drains can become clogged or damaged, leading to slow drainage, unpleasant odors, or water backup. Understanding the importance of repair and installation can help homeowners maintain an efficient plumbing system.</p><br>
+
+          <h3>Common Tubs and Shower Drain Issues</h3><br>
+          <p>Several issues can affect tubs and shower drains. Hair, soap scum, and mineral deposits can accumulate, causing clogs that prevent water from draining properly. Pipe misalignment or damage can also lead to leaks and water seepage. In some cases, old and corroded pipes may need replacement to restore optimal function.</p><br>
+          
+          <h3>Signs Your Tubs or Shower Drain Needs Repair</h3><br>
+          <p>Slow drainage is one of the most common signs of a clogged or damaged drain. If water pools around your feet while showering, it indicates a partial blockage. Foul odors coming from the drain can signal trapped debris or mold growth. Gurgling noises when water drains may indicate a ventilation issue, which requires prompt attention.</p><br>
+          
+          <h3>Troubleshooting Drain Problems</h3><br>
+          <p>Simple drain problems can sometimes be resolved without professional help. Using a drain cover can prevent hair and debris from accumulating in the pipes. Pouring a mixture of baking soda and vinegar down the drain can help break down minor clogs. If the issue persists, using a plunger or drain snake may provide a temporary solution.</p><br>
+          
+          <h3>When to Replace a Tub or Shower Drain</h3><br>
+          <p>If recurring clogs and slow drainage persist despite repeated cleaning, it may be time to replace the drain system. Cracked or leaking pipes can cause water damage and mold growth, requiring immediate attention. Upgrading to modern, corrosion-resistant piping can improve drainage efficiency and prevent future plumbing issues.</p><br>
+          
+          <h3>Benefits of Professional Drain Repair and Installation</h3><br>
+          <p>Hiring a professional for <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/">drain repair and installation</a> ensures that the job is done correctly and efficiently. Professionals use advanced tools, such as hydro jetting and camera inspections, to diagnose and fix drainage issues. Expert installation prevents future leaks and provides long-term reliability.</p><br>
+          
+          <h3>Steps for Shower Drain Installation</h3><br>
+          <p>Installing a new shower drain requires careful planning and precision. The first step involves selecting the right drain type, such as a standard, linear, or tile-in drain. The existing drain is removed, and the surrounding area is cleaned to ensure a proper fit. The new drain is then secured, connected to the plumbing system, and sealed to prevent leaks.</p><br>
+          
+          <h3>How to Prevent Shower and Tub Drain Clogs</h3><br>
+          <p>Routine maintenance can help prevent drain problems. Using a drain strainer reduces the amount of hair and debris that enters the pipes. Regularly flushing the drain with hot water can help dissolve soap buildup. Avoiding the use of harsh chemical drain cleaners can also protect pipes from corrosion.</p><br>
+          
+          <h3>Choosing the Right Drain for Your Tub or Shower</h3><br>
+          <p>Different types of drains offer various benefits. Standard pop-up drains are common in bathtubs and allow easy water retention. Linear drains provide a sleek, modern look and improve water flow. Tile-in drains blend seamlessly with flooring, offering a stylish and functional solution for contemporary bathrooms.</p><br>
+          
+          <h3>Why Professional Services Are Essential</h3><br>
+          <p>DIY drain repairs can sometimes provide temporary relief, but professional plumbing services ensure long-term solutions. Experts can diagnose hidden issues, such as pipe misalignment or deep clogs, that may not be visible. Proper installation and repair prevent costly water damage and ensure efficient drainage.</p><br>
+          
+          <h3>Reliable Tubs and Shower Drain Repair & Installation Services</h3><br>
+          <p>If you're dealing with a clogged or damaged tub or shower drain, our experienced team is ready to help. We offer professional repair and installation services to restore proper drainage and prevent future issues. Contact us today for expert solutions <a href="https://www.plumbersinrockford.com/services/residential-plumbing/water-softener/">tailored to your plumbing</a> needs.</p><br>
+          
+          
+        </article>
+
+
+    </section>
+
+     <!--Service Section-->
+     <section class="services">
+      <h2>Our Services</h2>
+      <div class="service-container">
+          <div class="service-box">
+              <i class="fas fa-hand-holding-water"></i>
+              <h3>Clogged Drain Repair</h3>
+              <p>Expert solutions to clear clogged drains and restore smooth water flow.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/clogged-drain-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-trash-alt"></i>
+              <h3>Garbage Disposal Repair</h3>
+              <p>Reliable garbage disposal repair to keep your kitchen running efficiently.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/garbage-disposal-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-shower"></i>
+              <h3>Shower Repair & Installation</h3>
+              <p>Professional shower repair and installation for a perfect bathing experience.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/shower-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-burn"></i>
+              <h3>Tankless Water Heater Repair</h3>
+              <p>Efficient tankless water heater repairs to ensure continuous hot water.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/tankless-heater-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-toilet"></i>
+              <h3>Toilet Repair & Installation</h3>
+              <p>Dependable toilet repair and installation services for a hassle-free bathroom.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/toilet-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-water"></i>
+              <h3>Water Softener Repair</h3>
+              <p>Expert water softener repair services for clean and scale-free water.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/water-softener-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-tint"></i>
+              <h3>Water Heater Repair</h3>
+              <p>Quick and reliable water heater repairs to keep your water warm.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/water-heater-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-wrench"></i>
+              <h3>Tubs & Drain Repair</h3>
+              <p>Fix leaky tubs and drains efficiently to prevent water damage.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/tub-drain-repair" class="btn">Read More</a>
+          </div>
+      </div>
+  </section>
+
+
+
+
+
+
+<!--Faqs Section-->
+<section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-question">What are the signs that my shower or tub drain needs repair?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>Slow drainage, standing water, foul odors, gurgling noises, or frequent clogs are common signs that your tub or shower drain needs repair.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">Why is my shower drain clogged?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>Hair, soap scum, dirt, and mineral buildup are common causes of clogged shower drains. Regular cleaning and drain strainers can help prevent blockages.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">How can I fix a slow-draining shower or tub?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>Try using a drain snake, plunger, or a mixture of baking soda and vinegar. If the problem persists, professional drain cleaning may be needed.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">Can I replace my bathtub with a walk-in shower?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>Yes, converting a bathtub into a walk-in shower is possible and can improve accessibility. Our professional plumbers can assess your space and recommend the best installation options.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">How long does it take to install a new tub or shower drain?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>Depending on the complexity, drain installation or replacement typically takes a few hours. Full shower or tub installations may take 1-2 days.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">When should I replace my bathtub or shower?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>If your tub or shower has cracks, leaks, stains, or persistent drainage issues, replacement might be a better option than repairs.</p>
+        </div>
+    </div>
+    
+    
+    
+    </div>
+</section>|
+
+<!--Article Section-->
+
+
+
+
+<footer>
+    <div class="footer">
+        <div class="footer-column">
+            <h3>PlumbPro Services</h3>
+            <p>Professional plumbing services for residential and commercial properties. Available 24/7 for all your plumbing needs.</p>
+            <div class="social-icons">
+                <a href="https://web.facebook.com/plumbersinrockford"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/plumberrockford"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/plumbersinrockford/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/plumbersinrockford/"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#showservice">Services</a>
+            <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/sitemap.xml">Sitemap</a>
+            <a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/">Commercial Plumbing</a>
+        </div>
+        <div class="footer-column">
+            <h3>Services</h3>
+            <a href="#">Drain Repair</a>
+            <a href="#">Water Heater Services</a>
+            <a href="#">Toilet Repair</a>
+            <a href="#">Faucet Installation</a>
+            <a href="#">Emergency Services</a>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-map-marker-alt"></i> 31 Greglynn St, Machesney Park, IL 61115, USA</p>
+            <p><i class="fas fa-phone"></i> (858) 726-5590</p>
+            <p><i class="fas fa-envelope"></i> plumbersinrockford@gmail.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2025 PlumbPro Services. All rights reserved.
+    </div>
+</footer>
+
+<script>
+
+document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const faqItem = button.parentElement;
+        const icon = button.querySelector('.icon');
+
+        // Toggle active class
+        faqItem.classList.toggle('active');
+
+        // Change icon from + to -
+        icon.textContent = faqItem.classList.contains('active') ? '−' : '+';
+    });
+});
+
+
+</script>
+
+
+
+</body>
+
+
+</html>

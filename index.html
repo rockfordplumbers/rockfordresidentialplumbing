@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="canonical" href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/" />
+    <meta name="robots" content="index">
+    <link rel="icon" href="https://raw.githubusercontent.com/TintStudio/images/refs/heads/main/cropped-plumbers-in-rockford-180x180.webp" type="image/x-icon">
+    <title>Rockford Residential Plumbing
+    </title>
+    <style>
+
+          /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* nav section*/
+    nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2563eb; /* Adjust background color */
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+ul li {
+    position: relative;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+}
+
+ul li .contact-btn {
+    background-color: white;
+    color: #2563eb;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* Ensure the dropdown container is inline */
+/* Ensures the dropdown container is inline */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the dropdown button */
+.dropdown > a {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between text and arrow */
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+/* Dropdown arrow styling */
+.dropdown > a::after {
+    content: "▼"; /* Unicode down arrow */
+    font-size: 12px;
+    color: white;
+    position: relative;
+    top: 2px; /* Adjust to move it up */
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Rotate arrow when hovered */
+.dropdown:hover > a::after {
+    transform: rotate(180deg);
+}
+
+/* Existing dropdown menu styling */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 250px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu li a {
+    color: black;
+    padding: 10px;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f4f4f4;
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('https://github.com/TintStudio/images/blob/main/plumber-installing-new-pipes-2.jpg?raw=true') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Overlay Effect */
+.hero-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hero Content */
+.hero-content {
+    color: white;
+    text-align: left;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.hero-content h4 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.hero-content h1 {
+    font-size: 38px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/* Call-To-Action Button */
+.btn-primary {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #007bff;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+/*Service Section*/
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f4f4f4;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Services Grid */
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Service Box */
+
+.service-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-box i {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.service-box h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+}
+
+/*Why Choose us*/
+/* Why Choose Us Section */
+.why-choose-us {
+    text-align: center;
+    padding: 50px 20px;
+    background: #ffffff;
+}
+
+.why-choose-us h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Why Choose Us Grid */
+.why-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Why Box */
+.why-box {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.why-box i {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.why-box h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0a2e5c;
+}
+
+.why-box p {
+    font-size: 16px;
+    color: #333;
+}
+
+.why-box:hover {
+    transform: translateY(-5px);
+}
+
+/*footer*/
+
+
+        .footer {
+            background-color: #1E4ED8;
+            color: white;
+            padding: 30px 50px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer-column {
+            max-width: 250px;
+        }
+        .footer h3 {
+            margin-bottom: 15px;
+        }
+        .footer p, .footer a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .footer .social-icons a {
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 20px;
+            color: white;
+        }
+        .footer .social-icons a:hover {
+            color: #FFD700;
+        }
+        .footer-bottom {
+            text-align: center;
+            padding: 15px;
+            background-color: #153DB3;
+            color: white;
+            font-size: 14px;
+        }
+
+        /*Content Section*/
+        .plumbing-services {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plumbing-services h2 {
+    color: #0a3871;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.text {
+    flex: 1;
+}
+
+.text p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #0a3871;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #072b5a;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 5px;
+    max-width: 400px;
+}
+
+/*Faqs Section*/
+.faq {
+    text-align: center;
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.faq h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ccc;
+}
+
+.faq-question {
+    width: 100%;
+    background: #002c66;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question .icon {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.faq-answer {
+    display: none;
+    background: #f8f8f8;
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-question .icon {
+    transform: rotate(45deg);
+}
+
+/*Article Section*/
+.articles-section {
+    background: linear-gradient(to right, #003366, #0066cc);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.articles-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.articles-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.article-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+    text-align: left;
+}
+
+.article-box h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+.article-box h4 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color:white;
+}
+
+.article-box p {
+    font-size: 1.1em;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    color: #ffcc00;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+      </style>
+
+
+</head>
+
+<body>
+
+    <!--Nav Section-->
+    <nav>
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/TintStudio/images/refs/heads/main/plumbers-in-rockford.webp" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/">Home</a></li>
+            
+            <li class="dropdown">
+                <a href="#">Residential Plumbing </a>
+                <ul class="dropdown-menu">
+                    <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/clogged-drain-repair">Clogged Drain Repair and Installation</a></li>
+                    <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/garbage-disposal-repair">Plumbing and Garbage Disposal Repair</a></li>
+                    <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/shower-repair">Shower Repair and Installation</a></li>
+                    <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/tankless-heater-repair">Tankless Water Heater Repair and Installation</a></li>
+                    <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/toilet-repair">Toilet Repair & Installation</a></li>
+                    <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/water-softener-repair">Water Softener Repair and Installation</a></li>
+                    <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/water-heater-repair">Water Heater Repair & Installation</a></li>
+                    <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/tub-drain-repair">Tubs and Shower Drain Repair and Installation</a></li>
+                </ul>
+            </li>
+    
+            <li class="dropdown">
+                <a href="#">Blog </a>
+                <ul class="dropdown-menu">
+                    <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/plumbing-experts-rockford">Top Benefits of Rockford Plumbing Experts</a></li>
+                    <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/plumbing-tips-seasonal">Essential Seasonal Plumbing Tips</a></li>
+                    <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/quick-plumbing-fix">Fix Plumbing Issues Quickly</a></li>
+                    <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/rockford-emergency-plumbers">Emergency Plumbers in Rockford</a></li>
+                </ul>
+            </li>
+    
+          
+            <li><a class="contact-btn" href="https://www.plumbersinrockford.com/contact/" rel="Nofollow">Contact Us</a></li>
+        </ul>
+    </nav>
+      
+    <!--Hero Section-->
+
+    <section class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h4>Welcome to Plumbers in Rockford</h4>
+                <h1>24 Hour Plumbing Services in <br>Rockford, IL</h1>
+                <p>Looking for trusted plumbers in Rockford? We’re licensed, insured, and experienced, offering top-quality plumbing services for homes and businesses. Call today for reliable plumbing services!</p>
+                <a href="tel:8587265590" class="btn-primary">
+                    📞 Book An Appointment
+                </a>
+                
+            </div>
+        </div>
+    </section>
+
+       <!--Service Section-->
+       <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service-box">
+                <i class="fas fa-hand-holding-water"></i>
+                <h3>Clogged Drain Repair</h3>
+                <p>Expert solutions to clear clogged drains and restore smooth water flow.</p>
+                <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/clogged-drain-repair" class="btn">Read More</a>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-trash-alt"></i>
+                <h3>Garbage Disposal Repair</h3>
+                <p>Reliable garbage disposal repair to keep your kitchen running efficiently.</p>
+                <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/garbage-disposal-repair" class="btn">Read More</a>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-shower"></i>
+                <h3>Shower Repair & Installation</h3>
+                <p>Professional shower repair and installation for a perfect bathing experience.</p>
+                <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/shower-repair" class="btn">Read More</a>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-burn"></i>
+                <h3>Tankless Water Heater Repair</h3>
+                <p>Efficient tankless water heater repairs to ensure continuous hot water.</p>
+                <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/tankless-heater-repair" class="btn">Read More</a>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-toilet"></i>
+                <h3>Toilet Repair & Installation</h3>
+                <p>Dependable toilet repair and installation services for a hassle-free bathroom.</p>
+                <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/toilet-repair" class="btn">Read More</a>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-water"></i>
+                <h3>Water Softener Repair</h3>
+                <p>Expert water softener repair services for clean and scale-free water.</p>
+                <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/water-softener-repair" class="btn">Read More</a>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-tint"></i>
+                <h3>Water Heater Repair</h3>
+                <p>Quick and reliable water heater repairs to keep your water warm.</p>
+                <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/water-heater-repair" class="btn">Read More</a>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-wrench"></i>
+                <h3>Tubs & Drain Repair</h3>
+                <p>Fix leaky tubs and drains efficiently to prevent water damage.</p>
+                <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/tub-drain-repair" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+    
+
+
+<!--Why Choose Us-->
+
+<section class="why-choose-us">
+    <h2>Why Choose Plumbers in Rockford For Plumbing Services?</h2>
+    <div class="why-container">
+        <div class="why-box">
+            <i class="fas fa-clock"></i>
+            <h3>Available 24/7</h3>
+            <p>Plumbing emergencies can happen at any time. Our 24/7 emergency plumbers are ready to respond, whether it's a burst pipe, sewer backup, or an urgent water heater repair.</p>
+        </div>
+        <div class="why-box">
+            <i class="fas fa-id-badge"></i>
+            <h3>Licensed and Insured Plumbers</h3>
+            <p>Our team is composed of licensed plumbers who bring years of expertise to every project. Whether it's repairing clogged drains or installing modern bathroom plumbing, you can trust our qualifications.</p>
+        </div>
+        <div class="why-box">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Local Expertise</h3>
+            <p>As a trusted Rockford local business, we understand the specific plumbing needs of Rockford residents and businesses. Our commitment to excellence ensures that every job is completed to the highest standard.</p>
+        </div>
+    </div>
+</section>
+
+<!--Content Section-->
+
+<section class="plumbing-services">
+    <h2>Clogged Drain Repair and Installation</h2>
+    <div class="content">
+        <div class="text">
+            <p>Clogged drains can cause water backups and damage your plumbing system. Our expert team provides thorough drain cleaning and repairs to keep your pipes flowing smoothly.</p><br>
+            <p>We use professional techniques such as hydro-jetting and drain snaking to remove even the toughest clogs. Whether it's a minor blockage or a major sewer issue, we have the right solution.</p><br>
+            <p>Regular maintenance can prevent future clogs and expensive repairs. Contact us for reliable clogged drain repair and installation services.</p><br>
+            <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/clogged-drain-repair" class="btn">Learn More</a>
+        </div>
+        <div class="image">
+            <img src="https://raw.githubusercontent.com/TintStudio/images/refs/heads/main/blocked-drain-reading.webp" alt="Clogged Drain Repair" >
+        </div>
+    </div>
+</section>
+
+<section class="plumbing-services">
+    <h2>Garbage Disposal Repair</h2>
+   
+    <div class="content">
+        <div class="image">
+            <img src="https://raw.githubusercontent.com/TintStudio/images/refs/heads/main/blocked-drain-reading.webp" alt="Garbage Disposal Repair" >
+        </div>
+        <div class="text">
+            <p>A faulty garbage disposal can lead to clogged drains, unpleasant odors, and inefficient kitchen cleanup. Common issues include jammed blades, motor failures, or leaks, often caused by food buildup or foreign objects getting stuck. Regular maintenance and proper use can prevent these problems.</p><br>
+            <pIf your garbage disposal is making strange noises, failing to grind food properly, or not turning on at all, it may need professional repair. A technician can inspect the unit, remove blockages, replace worn-out parts, or even install a new disposal if necessary.
+
+        </p><br>
+            <p>To keep your disposal working smoothly, avoid putting fibrous foods, grease, or hard objects down the drain. Running cold water while using the disposal and occasional cleaning with baking soda and vinegar can help extend its lifespan.            </p><br>
+            <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/garbage-disposal-repair" class="btn">Learn More</a>
+        </div>
+     
+    </div>
+</section>
+
+<section class="plumbing-services">
+    <h2>Shower Repair and Installation</h2>
+    <div class="content">
+        <div class="text">
+    <p>Enjoy a hassle-free shower experience with our expert repair and installation services. From fixing leaks to upgrading your shower system, we handle it all.</p><br>
+    <p>Our skilled technicians can replace worn-out parts, fix low water pressure issues, and ensure proper drainage for a smooth experience.</p><br>
+    <p>Whether you need a new shower installation or quick repairs, we provide top-notch solutions tailored to your needs.</p><br>
+    <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/shower-repair" class="btn">Learn More</a>
+</div>
+    <div class="image">
+        <img src="https://github.com/TintStudio/images/blob/main/Plumbing-Repair-rockford-980x654.jpg?raw=true" alt="Clogged Drain Repair">
+    </div>
+</div>
+</section>
+
+<section class="plumbing-services">
+    <div class="content">
+        <div class="image">
+            <img src="https://github.com/TintStudio/images/blob/main/Plumbing-installation-rockford-il-480x318.jpg?raw=true" alt="Tankless Water">
+        </div>
+        <div class="text">
+    <h2>Tankless Water Heater Repair and Installation</h2>
+    <p>Tankless water heaters provide endless hot water, but when they malfunction, you need quick and reliable repairs.</p>
+    <p>We specialize in diagnosing issues such as temperature fluctuations, sediment buildup, and unit failures to restore efficiency.</p>
+    <p>Upgrade your home with a new tankless system or schedule a repair to keep your water heater running optimally.</p>
+    <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/tankless-heater-repair" class="btn">Learn More</a>
+</div>
+
+</section>
+
+<section class="plumbing-services">
+    <div class="content">
+        <div class="text">
+    <h2>Toilet Repair & Installation</h2>
+    <p>A malfunctioning toilet can be inconvenient and costly. Our team provides reliable toilet repair and installation services.</p>
+    <p>We fix issues like constant running water, leaks, clogs, and broken flushing mechanisms to restore functionality.</p>
+    <p>For a brand-new installation or emergency repairs, we ensure hassle-free service and long-term reliability.</p>
+    <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/toilet-repair" class="btn">Learn More</a>
+
+</div>
+    <div class="image">
+        <img src="https://github.com/TintStudio/images/blob/main/bathroom-plumbing-installation-rockford.png?raw=true" alt="Tankless Water">
+    </div>
+</section>
+
+<section class="plumbing-services">
+    <div class="content">
+        <div class="image">
+            <img src="https://raw.githubusercontent.com/TintStudio/images/refs/heads/main/plumbing-system_95818fe4-993e-46e0-a21b-3d9d0a424a7c_1024x1024.webp" alt="Tankless Water">
+        </div>
+        <div class="text">
+    <h2>Water Softener Repair and Installation</h2>
+    <p>Hard water can cause mineral buildup and reduce the lifespan of your plumbing fixtures. Our water softener solutions improve water quality.</p>
+    <p>We diagnose and fix common water softener issues such as salt bridging, resin tank malfunctions, and clogged drain lines.</p>
+    <p>Upgrade to a new system or repair your existing unit with our professional services.</p>
+    <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/water-softener-repair" class="btn">Learn More</a>
+</div>
+
+</section>
+
+<section class="plumbing-services">
+    <div class="content">
+        <div class="text">
+    <h2>Water Heater Repair & Installation</h2>
+    <p>Hot water is essential for daily activities. If your water heater isn’t working correctly, our expert repair services can help.</p>
+    <p>We fix issues like sediment buildup, heating element failures, and thermostat malfunctions to ensure consistent hot water supply.</p>
+    <p>Need a new water heater? We install energy-efficient models to enhance performance and reduce energy costs.</p>
+    <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/water-heater-repair" class="btn">Learn More</a>
+</div>
+<div class="image">
+    <img src="https://raw.githubusercontent.com/TintStudio/images/refs/heads/main/Residential-Plumbing-service-in-rockford-480x320.webp" alt="Tankless Water">
+</div>
+</section>
+
+<section class="plumbing-services">
+    <div class="content">
+        <div class="image">
+            <img src="https://github.com/TintStudio/images/blob/main/Damp-and-Leak-Detection-rockford-480x326.jpg?raw=true" alt="Tankless Water">
+        </div>
+        <div class="text">
+    <h2>Tubs and Shower Drain Repair and Installation</h2>
+    <p>Slow drains and leaks in your tubs or showers can cause water damage and inconvenience. Our professional services ensure efficient drainage.</p>
+    <p>We use advanced techniques to remove blockages, fix leaks, and restore proper water flow.</p>
+    <p>Whether you need repairs or a full installation, we guarantee top-quality service for long-term reliability.</p>
+    <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/tub-drain-repair" class="btn">Learn More</a>
+</div>
+
+</section>
+<!--Article Section-->
+
+<section class="articles-section">
+    <h2>Expert Plumbing Services & Solutions</h2>
+    <div class="articles-container">
+
+        <!-- Clogged Drain Repair and Installation -->
+        <article class="article-box">
+
+            <p>Plumbing issues can disrupt daily life, causing inconvenience and potential damage to your property. Whether it’s a leaky faucet, clogged drain, or a major pipe burst, expert plumbing services provide quick and efficient solutions. Professional plumbers are equipped with the right tools and experience to diagnose and fix problems, ensuring your home’s plumbing system operates smoothly.</p><br>
+       <h3>Common Plumbing Problems and Solutions</h3>
+       <p>Plumbing issues range from minor leaks to major sewer line blockages. Some of the most common problems include:</p><br>
+       <h4>Clogged Drains & Toilets</h4>
+       <p>A professional plumber uses specialized equipment to remove tough blockages and restore water flow.</p><br>
+       
+       <h4>Leaky Faucets & Pipes</h4>
+       <p>Worn-out seals, high water pressure, or corrosion can cause leaks, leading to water waste and increased bills. Timely repairs prevent further damage.</p>
+       
+       <h4>Water Heater Issues</h4>
+       <p>Whether you need a repair or a new installation, plumbers ensure your water heater operates efficiently.</p><br>
+       
+       <h4>Low Water Pressure</h4>
+       <p>Often caused by pipe buildup, leaks, or municipal supply issues, plumbers can diagnose and restore proper pressure.</p><br>
+       
+       <h4>Sewer Line Problems</h4>
+       <p>Slow drains, foul odors, or water pooling in the yard could indicate sewer line issues that require immediate attention.</p><br>
+       
+       <h3>Why Hire Professional Plumbing Services?</h3>
+<p>Hiring professional plumbers ensures that repairs and installations are done correctly the first time, saving time and money. They use advanced techniques such as video inspections, hydro jetting, and trenchless repairs to fix issues without unnecessary excavation. Additionally, professional services come with warranties, giving you peace of mind knowing the job is backed by expertise.</p><br>
+
+<h3>Preventive Maintenance for Long-Term Solutions</h3>
+<p>Regular plumbing maintenance can help prevent costly repairs. Routine inspections, drain cleaning, and water heater maintenance keep your plumbing system in top condition. Homeowners can also take simple steps, such as avoiding grease buildup in sinks, using drain strainers, and checking for leaks, to prevent common problems.</p><br>
+
+<h3>Get Reliable Plumbing Services Today</h3>
+<p>Whether it’s a minor fix or a major plumbing emergency, expert plumbing services provide reliable solutions to keep your home running smoothly. Contact a professional plumber today to ensure your plumbing system remains in the best possible condition.</p><br>
+
+
+        </article>
+
+
+    </section>
+<!--Faqs Section-->
+<section class="faq">
+   
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">How quickly can a plumber in Rockford respond to an emergency?<span class="icon">+</span></button>
+                <div class="faq-answer">
+                    <p>At PlumbersInRockford, we understand that plumbing emergencies can happen at any time. Thatâ€™s why we offer 24/7 emergency services with rapid response times. In most cases, we can have a skilled plumber at your Rockford home within an hour of your call. Our team is always ready to tackle urgent issues like burst pipes, severe leaks, or sewer backups. We prioritize emergencies to minimize damage to your property and restore your plumbing systems as quickly as possible.
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Do you offer emergency plumbing services in Rockford?<span class="icon">+</span></button>
+                <div class="faq-answer">
+                    <p>Yes, we offer 24-hour emergency plumbing services to address any urgent plumbing issues. Whether itâ€™s a burst pipe or a major leak, our team is available around the clock to provide quick and effective solutions.
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How can I find reliable plumbers near me in Rockford?<span class="icon">+</span></button>
+                <div class="faq-answer">
+                    <p>Finding a reliable plumber in Rockford is easy with plumbers in rockford. Our team is made up of licensed and experienced plumbers who are dedicated to delivering top-quality service. Weâ€™re committed to ensuring your satisfaction with every job we undertake.
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What are the signs that I need to replace my water heater?<span class="icon">+</span></button>
+                <div class="faq-answer">
+                    <p>Several signs indicate it might be time to replace your water heater in Rockford. If your unit is over 10-15 years old, itâ€™s nearing the end of its typical lifespan. Other red flags include rusty water, strange noises from the tank, or leaks around the base. If youâ€™re constantly running out of hot water or notice your energy bills climbing, your heater might be losing efficiency. At PlumbersInRockford, we can assess your water heaterâ€™s condition and help you decide between repair and replacement. Weâ€™ll consider factors like your householdâ€™s hot water needs and energy efficiency goals to recommend the best solution for your Rockford home.
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What types of plumbing services do you offer for residential properties?<span class="icon">+</span></button>
+                <div class="faq-answer">
+                    <p>Our Rockford plumbing company offers a comprehensive range of services for commercial properties. This includes routine maintenance, emergency repairs, pipe installation and replacement, water heater services, and complex system overhauls. Weâ€™re experienced in handling the unique plumbing needs of various commercial establishments, from office buildings and restaurants to industrial facilities. Our team is well-versed in commercial-grade fixtures, large-scale water systems, and industrial plumbing equipment. We also offer preventative maintenance programs to help businesses avoid costly downtime due to plumbing issues. Our commercial plumbing services in Rockford are designed to ensure your business operations run smoothly, with minimal disruption and maximum efficiency.
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How much does a typical plumbing service call cost in Rockford, IL?
+                    <span class="icon">+</span></button>
+                <div class="faq-answer">
+                    <p>The  typically ranges from $75 to $150, depending on the complexity of the issue and the time required. At Plumbers in Rockford, IL, we provide transparent pricing and offer free estimates for most services. Our rates are competitive within the local market, and we strive to deliver excellent value for your investment. Remember, costs can vary based on factors like the urgency of the service, the specific plumbing problem, and any necessary parts or materials. We always provide a detailed breakdown of costs before beginning any work to ensure there are no surprises.
+
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Do you offer 24/7 emergency plumbing services in Rockford?
+                    <span class="icon">+</span></button>
+                <div class="faq-answer">
+                    <p>Yes, we provide round-the-clock emergency plumbing services in Rockford and the surrounding areas. Our team of skilled plumbing technicians is available 24/7 to address urgent issues like burst pipes, severe leaks, or sewer backups. We understand that plumbing emergencies can occur at any time, so weâ€™re always ready to respond promptly to minimize damage and restore your plumbing system. Our emergency service includes rapid response times, thorough diagnostics, and efficient repairs to get your plumbing back in working order as quickly as possible.
+
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How long does it typically take to replace a water heater in Rockford?
+                    <span class="icon">+</span></button>
+                <div class="faq-answer">
+                    <p>Replacing a water heater in Rockford usually takes between 2 to 4 hours for a standard installation. However, the exact time can vary depending on factors such as the type of water heater (tank or tankless), the location of the unit, and any necessary upgrades to meet current building codes. Our experienced Rockford plumbers work efficiently to minimize disruption to your daily routine. We handle everything from removing the old unit to installing and testing the new one, ensuring itâ€™s operating safely and effectively. For more complex installations or in cases where additional plumbing work is required, the process might take longer, but we always provide a time estimate before starting the job.
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    
+    
+</section>
+
+
+<footer>
+    <div class="footer">
+        <div class="footer-column">
+            <h3>PlumbPro Services</h3>
+            <p>Professional plumbing services for residential and commercial properties. Available 24/7 for all your plumbing needs.</p>
+            <div class="social-icons">
+                <a href="https://web.facebook.com/plumbersinrockford"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/plumberrockford"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/plumbersinrockford/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/plumbersinrockford/"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#showservice">Services</a>
+            <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/sitemap.xml">Sitemap</a>
+            <a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/">Commercial Plumbing</a>
+        </div>
+        <div class="footer-column">
+            <h3>Services</h3>
+            <a href="#">Drain Repair</a>
+            <a href="#">Water Heater Services</a>
+            <a href="#">Toilet Repair</a>
+            <a href="#">Faucet Installation</a>
+            <a href="#">Emergency Services</a>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-map-marker-alt"></i> 31 Greglynn St, Machesney Park, IL 61115, USA</p>
+            <p><i class="fas fa-phone"></i> (858) 726-5590</p>
+            <p><i class="fas fa-envelope"></i> plumbersinrockford@gmail.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2025 PlumbPro Services. All rights reserved.
+    </div>
+</footer>
+<script>
+
+    document.querySelectorAll('.faq-question').forEach(button => {
+        button.addEventListener('click', () => {
+            const faqItem = button.parentElement;
+            const icon = button.querySelector('.icon');
+    
+            // Toggle active class
+            faqItem.classList.toggle('active');
+    
+            // Change icon from + to -
+            icon.textContent = faqItem.classList.contains('active') ? '−' : '+';
+        });
+    });
+    
+
+    </script>
+    <script type="application/ld+json">{
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "LocalBusiness",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "31 Greglynn St, Machesney Park",
+              "addressLocality": "rockford illinois",
+              "addressRegion": "united state ",
+              "postalCode": " IL 61115",
+              "addressCountry": "united state"
+            },
+            "@id": "https://maps.app.goo.gl/NZdkLHHHmLT3g9zZ6",
+            "name": "Rockford IL plumbing experts, Rockford emergency plumbing, licensed plumbers in Rockford, reliable plumbing contractors Rockford, Rockford plumbing repairs, affordable plumbing company Rockford, cheap plumbing services Rockford, Rockford residential plumbing,",
+            "alternateName": ["Rockford IL plumbing experts ", " emergency plumbing Rockford IL ", " plumbers in rockford il ", " cheap plumbers in rockford il "],
+            "description": " Your Trusted Partner for Quality Plumbing Services in Rockford. Proudly Serving the Community with Excellence.
+      ",
+            "telephone": "858-726-5590 ",
+            "url": " https://plumbersinrockford.com/ ",
+            "logo": " https://plumbersinrockford.com/ ",
+            "hasMap": " https://maps.app.goo.gl/NZdkLHHHmLT3g9zZ6",
+            "currenciesAccepted": "USD",
+            "paymentAccepted": "Visa, MC, PayPal, Amex, Discover, Cash, Cryptocurrency",
+            "priceRange": "$$",
+            "openingHours": "24hour",
+            "disambiguatingDescription": " plumbers in rockford, we deliver expert plumbing services right here in Rockford. Whether it’s a quick repair or a full installation, our team ensures quality work that you can rely on.",
+            "mainEntityOfPage": " https://en.wikipedia.org/wiki/Plumbing",
+            "foundingDate": "2008",
+            "foundingLocation": [
+              {
+                "@type": "Place",
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": " 42.380583",
+                  "longitude": "- 89.034306"
+                },
+                "name": "Plumbing service in Rockford Il "
+              }
+            ],
+            "areaServed": ["Loves Park, IL", " Machesney Park", " Cherry Valley, IL", " Rockford , il"],
+            "image": {
+              "@type": "ImageObject",
+              "name": " affordable plumbing company Rockford, cheap plumbing services Rockford, Rockford residential plumbing, commercial plumbers Rockford IL, Rockford plumbing maintenance",
+              "creator": " Plumbing service in Rockford Il ",
+              "author": "Rosario",
+              "contentLocation": "Rockford  , illinois ",
+              "description": " plumbers in rockford, we deliver expert plumbing services right here in Rockford. Whether it’s a quick repair or a full installation, our team ensures quality work that you can rely on. ",
+              "url": " https://plumbersinrockford.com/ "
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": " Plumbing service in Rockford Il ",
+              "@id": " https://plumbersinrockford.com/ ",
+              "url": " https://plumbersinrockford.com/services/residential-plumbing/",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": [
+                    {
+                      "@type": "service",
+                      "name": " Residential plumbing service in rockford",
+                      "@id": " https://plumbersinrockford.com/services/residential-plumbing/",
+                      "url": " https://plumbersinrockford.com/services/residential-plumbing/",
+                      "description": " Looking for trustworthy residential plumbing services in Rockford? Our expert plumbers provide top-notch solutions for all your home plumbing needs. Contact us"
+                    },
+                    {
+                      "@type": "service",
+                      "name": " Clogged Drain Repair and installation service in rockford",
+                      "@id": " https://plumbersinrockford.com/services/residential-plumbing/clogged-drain-repair/",
+                      "url": " https://plumbersinrockford.com/services/residential-plumbing/clogged-drain-repair/",
+                      "description": " Get expert clogged drain repair and installation services in Rockford. Our dedicated team provides swift, effective solutions tailored to your needs, ensuring long-lasting results."
+                    },
+                    {
+                      "@type": "Service",
+                      "name": " Plumbing and Garbage Disposal Repair Services in Rockford",
+                      "@id": " https://plumbersinrockford.com/services/residential-plumbing/garbage-disposal-repair/",
+                      "url": " https://plumbersinrockford.com/services/residential-plumbing/garbage-disposal-repair/",
+                      "description": " Get expert clogged drain repair and installation services in Rockford. Our dedicated team provides swift, effective solutions tailored to your needs, ensuring long-lasting results."
+                    },
+                    {
+                      "@type": "Service",
+                      "name": " Reliable Shower Repair and Installation Services in Rockford",
+                      "@id": " https://plumbersinrockford.com/services/residential-plumbing/shower-repair/",
+                      "url": " https://plumbersinrockford.com/services/residential-plumbing/shower-repair/",
+                      "description": " Looking for reliable shower repair and installation in Rockford? Our expert team provides top-quality service, ensuring efficient repairs and flawless installations. Contact us today for a professional touch."
+                    },
+                    {
+                      "@type": "Service",
+                      "name": "Residential freezer repair tyler tx ",
+                      "@id": "https://appliancesrepairtylertx.com/residential/freezer-repair/",
+                      "url": "https://appliancesrepairtylertx.com/residential/freezer-repair/",
+                      "description": "Searching for reliable freezer repair in Tyler, TX? Our expert technicians offer efficient and trustworthy repair services. Contact us today for quick and affordable freezer repair solutions!"
+                    },
+      {
+                      "@type": "Service",
+                      "name": " Tankless Water Heater Repair and installation Rockford, IL",
+                      "@id": " https://plumbersinrockford.com/services/residential-plumbing/tankless-water-heater-services/",
+                      "url": " https://plumbersinrockford.com/services/residential-plumbing/tankless-water-heater-services/",
+                      "description": " Trust our Rockford-based experts for all your tankless water heater repair and installation needs. We offer prompt and professional service to enhance the efficiency and longevity of your water heater system."
+                    },
+      {
+                      "@type": "Service",
+                      "name": " Rockford Toilet Repair & Installation | Trusted Plumbing Experts",
+                      "@id": " https://plumbersinrockford.com/services/residential-plumbing/toilet-repair/",
+                      "url": " https://plumbersinrockford.com/services/residential-plumbing/toilet-repair/",
+                      "description": " Need reliable toilet repair or installation in Rockford? Our expert plumbers provide prompt, professional service to ensure your bathroom functions flawlessly. Call us for top-notch plumbing solutions tailored to your needs."
+                    },
+      {
+                      "@type": "Service",
+                      "name": " Professional Tubs and Shower Drain Repair Services in Rockford",
+                      "@id": " https://plumbersinrockford.com/services/residential-plumbing/tubs-and-shower-drain-replace/",
+                      "url": " https://plumbersinrockford.com/services/residential-plumbing/tubs-and-shower-drain-replace/",
+                      "description": " Experience exceptional tubs and shower drain repair with our Rockford-based experts. We provide high-quality, efficient solutions to address any drainage issues with professionalism and precision."
+                    },
+                    {
+                      "@type": "Service",
+                      "name": "Commercial Plumbing Services in Rockford, IL ",
+                      "@id": " https://plumbersinrockford.com/services/commercial-plumbing/",
+                      "url": " https://plumbersinrockford.com/services/commercial-plumbing/",
+                      "description": " Experience seamless plumbing services for your business in Rockford. Our commercial plumbing experts provide fast, efficient, and reliable solutions tailored to your needs."
+                    },
+      {
+                      "@type": "Service",
+                      "name": "Professional Water Leak Detection Service in Rockford ",
+                      "@id": " https://plumbersinrockford.com/services/commercial-plumbing/water-leak-detection-and-repair/",
+                      "url": " https://plumbersinrockford.com/services/commercial-plumbing/water-leak-detection-and-repair/",
+                      "description": " For reliable water leak detection services in Rockford, turn to our experienced team. We offer fast and efficient solutions to detect and repair leaks, minimizing potential damage and costs. Contact us for prompt and professional service."
+                    },
+      {
+                      "@type": "Service",
+                      "name": "Professional Pipe Repair and installation service in Rockford il ",
+                      "@id": " https://plumbersinrockford.com/services/commercial-plumbing/pipe-repair/",
+                      "url": " https://plumbersinrockford.com/services/commercial-plumbing/pipe-repair/",
+                      "description": " Experience top-notch pipe repair services in Rockford with our certified plumbers. We specialize in quick, reliable repairs for residential and commercial properties."
+                    },
+      {
+                      "@type": "Service",
+                      "name": "Professional Gas Line Repair and installation service in rockford IL",
+                      "@id": " https://plumbersinrockford.com/services/commercial-plumbing/gas-line-repair/",
+                      "url": " https://plumbersinrockford.com/services/commercial-plumbing/gas-line-repair/",
+                      "description": " Choose our expert gas line repair service in Rockford for high-quality and dependable solutions. We prioritize safety and customer satisfaction in every repair. Get in touch with us today!"
+                    },
+      {
+      "@type": "Service",
+                      "name": "Rockford Sewer and Drain Cleaning  Trusted Local Experts",
+                      "@id": " https://plumbersinrockford.com/services/commercial-plumbing/sewer-and-drain-cleaning/",
+                      "url": " https://plumbersinrockford.com/services/commercial-plumbing/sewer-and-drain-cleaning/",
+                      "description": " Trust Rockford’s leading sewer and drain cleaning experts for thorough and dependable service. Our local team is ready to tackle any drain issue. Schedule your appointment today!"
+                    },
+      {
+                      "@type": "Service",
+                      "name": "Low Water Pressure Repair & Solutions in Rockford  ",
+                      "@id": " https://plumbersinrockford.com/services/commercial-plumbing/low-water-pressure-solutions/",
+                      "url": " https://plumbersinrockford.com/services/commercial-plumbing/low-water-pressure-solutions/",
+                      "description": " Get expert low water pressure repair services in Rockford. Our trusted experts provide tailored solutions to improve water flow in your home or business."
+                    },
+                      
+                    {
+                      "@type": "Service",
+                      "name": "Affordable Pipelining repair and installation service in Rockford IL",
+                      "@id": " httpshttps://plumbersinrockford.com/services/commercial-plumbing/pipelining/",
+                      "url": " https://plumbersinrockford.com/services/commercial-plumbing/pipelining/",
+                      "description": " Trust our expert team in Rockford for your pipelining repair and installation needs. We offer comprehensive plumbing services to maintain and enhance your system’s performance."
+                    },
+      {
+                      "@type": "Service",
+                      "name": "Reliable Plumbing Services in Rockford, IL and near by cities ",
+                      "@id": " https://plumbersinrockford.com/services-area/",
+                      "url": " https://plumbersinrockford.com/services-area/",
+                      "description": " Looking for dependable plumbing services in Rockford, IL? Our skilled plumbers provide comprehensive solutions for all your plumbing needs, from repairs to installations. Experience quality service and satisfaction with every job."
+                    },
+      {
+                      "@type": "Service",
+                      "name": "Affordable and reliable Plumbing Services in Loves Park Illinois",
+                      "@id": " https://plumbersinrockford.com/services-area/plumbing-in-cherry-valley/",
+                      "url": " https://plumbersinrockford.com/services-area/plumbing-in-cherry-valley/",
+                      "description": " Looking for skilled plumbers in Cherry Valley? Plumbers in Rockford delivers professional plumbing services, including leak repairs, drain cleaning, and water heater installations. Satisfaction guaranteed."
+                    },
+      {
+                      "@type": "Service",
+                      "name": "Professional Plumbing Services in Loves Park, IL",
+                      "@id": " https://plumbersinrockford.com/services-area/plumbing-in-loves-park/",
+                      "url": " https://plumbersinrockford.com/services-area/plumbing-in-loves-park/",
+                      "description": " Plumbers in Rockford offers emergency plumbing services in Loves Park, IL. Our licensed plumbers are available 24/7 to address your urgent plumbing needs."
+                    },
+      {
+                      "@type": "Service",
+                      "name": " Reliable Plumbing Services in Machesney Park, Illinois",
+                      "@id": " https://plumbersinrockford.com/services-area/plumbing-in-machesney-park/",
+                      "url": " https://plumbersinrockford.com/services-area/plumbing-in-machesney-park/",
+                      "description": " Looking for reliable plumbing services in Machesney Park? Plumbers in Rockford delivers top-notch solutions for all your plumbing needs, with prompt service and professional expertise."
+                    },
+      {
+                      "@type": "Service",
+                      "name": " Recent Plumbing Achievements in Rockford, IL ",
+                      "@id": " https://plumbersinrockford.com/our-projects/",
+                      "url": " https://plumbersinrockford.com/our-projects/",
+                      "description": " Explore our portfolio of recent plumbing projects in Rockford, IL. See how Plumbers in Rockford is transforming homes and businesses with reliable and efficient plumbing solutions.
+      "
+                    },
+      {
+                      "@type": "Service",
+                      "name": " About us ",
+                      "@id": " https://plumbersinrockford.com/about-us/",
+                      "url": " https://plumbersinrockford.com/about-us/",
+                      "description": " For the past 10 years, we’ve proudly served the Rockford, IL community with dedication and expertise. Our journey is built on five years of hands-on experience, honing our skills in the intricate world of plumbing.
+      "
+                    },
+      {
+                      "@type": "Service",
+                      "name": "Contact Plumbers in Rockford for Quality Plumbing Services",
+                      "@id": " https://plumbersinrockford.com/contact/",
+                      "url": " https://plumbersinrockford.com/contact/",
+                      "description": " Need professional plumbing services in Rockford, IL? Contact Plumbers in Rockford today for trusted and efficient plumbing solutions. contact us at 858-726-5590"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+      <script type="application/ld+json">
+      {
+      "about":
+      "about":
+      [{"@type": "Thing", "name": "plumbing", "sameAs": ["https://en.wikipedia.org/wiki/Plumbing",
+      "https://www.google.com/search?q=plumbing&kgmid=/m/0b_zf"]},
+      {"@type": "Thing", "name": "plumbers", "sameAs": ["https://en.wikipedia.org/wiki/Plumber",
+      "https://www.google.com/search?q=plumbers&kgmid=/m/01jp58"]},
+      {"@type": "Thing", "name": "drain", "sameAs": ["https://en.wikipedia.org/wiki/Drain_(plumbing)",
+      "https://www.google.com/search?q=drain&kgmid=/m/02w0815"]},
+      {"@type": "Thing", "name": "bathroom", "sameAs": ["https://en.wikipedia.org/wiki/Bathroom",
+      "https://www.google.com/search?q=bathroom&kgmid=/m/01j2bj"]},
+      {"@type": "Thing", "name": "toilet", "sameAs": ["https://en.wikipedia.org/wiki/Toilet",
+      "https://www.google.com/search?q=toilet&kgmid=/m/09g1w"]},
+      {"@type": "Thing", "name": "midwest", "sameAs": ["https://en.wikipedia.org/wiki/Midwestern_United_States",
+      "https://www.google.com/search?q=midwest&kgmid=/m/0q76g"]},
+      {"@type": "Thing", "name": "kitchen", "sameAs": ["https://en.wikipedia.org/wiki/Kitchen",
+      "https://www.google.com/search?q=kitchen&kgmid=/m/0d4wf"]},
+      {"@type": "Thing", "name": "faucet", "sameAs": ["https://en.wikipedia.org/wiki/Tap_(valve)",
+      "https://www.google.com/search?q=faucet&kgmid=/m/02jz0l"]},
+      {"@type": "Thing", "name": "sinks", "sameAs": ["https://en.wikipedia.org/wiki/Sink",
+      "https://www.google.com/search?q=sinks&kgmid=/m/0130jx"]},
+      {"@type": "Thing", "name": "pipe", "sameAs": ["https://en.wikipedia.org/wiki/Pipe_(fluid_conveyance)",
+      "https://www.google.com/search?q=pipe&kgmid=/m/09w9qp"]},
+      {"@type": "Thing", "name": "drainage", "sameAs": ["https://en.wikipedia.org/wiki/Drainage",
+      "https://www.google.com/search?q=drainage&kgmid=/m/0cl7h"]},
+      {"@type": "Thing", "name": "kansas", "sameAs": ["https://en.wikipedia.org/wiki/Kansas",
+      "https://www.google.com/search?q=kansas&kgmid=/m/0488g"]},
+      {"@type": "Thing", "name": "traps", "sameAs": ["https://en.wikipedia.org/wiki/Trap_(plumbing)",
+      "https://www.google.com/search?q=traps&kgmid=/m/0269h2t"]},
+      {"@type": "Thing", "name": "sewer", "sameAs": ["https://en.wikipedia.org/wiki/Sanitary_sewer",
+      "https://www.google.com/search?q=sewer&kgmid=/m/0250fv"]},
+      {"@type": "Thing", "name": "basement", "sameAs": ["https://en.wikipedia.org/wiki/Basement",
+      "https://www.google.com/search?q=basement&kgmid=/m/02q_2q"]},
+      {"@type": "Thing", "name": "water", "sameAs": ["https://en.wikipedia.org/wiki/Water",
+      "https://www.google.com/search?q=water&kgmid=/m/0838f"]},
+      {"@type": "Thing", "name": "showers", "sameAs": ["https://en.wikipedia.org/wiki/Shower",
+      "https://www.google.com/search?q=showers&kgmid=/m/02f9f_"]},
+      {"@type": "Thing", "name": "valves", "sameAs": ["https://en.wikipedia.org/wiki/Valve",
+      "https://www.google.com/search?q=valves&kgmid=/m/080t7"]},
+      {"@type": "Thing", "name": "water heater", "sameAs": ["https://en.wikipedia.org/wiki/Water_heating",
+      "https://www.google.com/search?q=water+heater&kgmid=/m/02l3ys"]}],
+      "mentions":
+      [{"@type": "Thing", "name": "showerheads", "sameAs": ["https://en.wikipedia.org/wiki/Shower",
+      "https://www.google.com/search?q=showerheads&kgmid=/m/02f9f_"]},
+      {"@type": "Thing", "name": "trap", "sameAs": ["https://en.wikipedia.org/wiki/Trap_(plumbing)",
+      "https://www.google.com/search?q=trap&kgmid=/m/0269h2t"]},
+      {"@type": "Thing", "name": "sewer", "sameAs": ["https://en.wikipedia.org/wiki/Sanitary_sewer",
+      "https://www.google.com/search?q=sewer&kgmid=/m/0250fv"]},
+      {"@type": "Thing", "name": "grease traps", "sameAs": ["https://en.wikipedia.org/wiki/Grease_trap",
+      "https://www.google.com/search?q=grease+traps&kgmid=/m/02qn7p0"]},
+      {"@type": "Thing", "name": "drainage systems", "sameAs": ["https://en.wikipedia.org/wiki/Sewage",
+      "https://www.google.com/search?q=drainage+systems&kgmid=/m/01960d"]},
+      {"@type": "Thing", "name": "drain-waste-vent system", "sameAs": ["https://en.wikipedia.org/wiki/Drain-waste-vent_system",
+      "https://www.google.com/search?q=drain-waste-vent+system&kgmid=/m/03f22w"]},
+      {"@type": "Thing", "name": "shower", "sameAs": ["https://en.wikipedia.org/wiki/Shower",
+      "https://www.google.com/search?q=shower&kgmid=/m/02f9f_"]},
+      {"@type": "Thing", "name": "plumbing fixtures", "sameAs": ["https://en.wikipedia.org/wiki/Plumbing_fixture",
+      "https://www.google.com/search?q=plumbing+fixtures&kgmid=/m/02pkr5"]},
+      {"@type": "Thing", "name": "siphoned", "sameAs": ["https://en.wikipedia.org/wiki/Siphon",
+      "https://www.google.com/search?q=siphoned&kgmid=/m/02c1fj"]},
+      {"@type": "Thing", "name": "pipes", "sameAs": ["https://en.wikipedia.org/wiki/Plumbing",
+      "https://www.google.com/search?q=pipes&kgmid=/m/0b_zf"]},
+      {"@type": "Thing", "name": "wastewater", "sameAs": ["https://en.wikipedia.org/wiki/Sewage",
+      "https://www.google.com/search?q=wastewater&kgmid=/m/01960d"]},
+      {"@type": "Thing", "name": "tube", "sameAs": ["https://en.wikipedia.org/wiki/Pipe_(fluid_conveyance)",
+      "https://www.google.com/search?q=tube&kgmid=/m/09w9qp"]},
+      {"@type": "Thing", "name": "septic system", "sameAs": ["https://en.wikipedia.org/wiki/Septic_tank",
+      "https://www.google.com/search?q=septic+system&kgmid=/m/01fwz3"]},
+      {"@type": "Thing", "name": "septic tank", "sameAs": ["https://en.wikipedia.org/wiki/Septic_tank",
+      "https://www.google.com/search?q=septic+tank&kgmid=/m/01fwz3"]},
+      {"@type": "Thing", "name": "flapper valve", "sameAs": ["https://en.wikipedia.org/wiki/Flush_toilet",
+      "https://www.google.com/search?q=flapper+valve&kgmid=/m/01jt3m"]},
+      {"@type": "Thing", "name": "hot water", "sameAs": ["https://en.wikipedia.org/wiki/Water_heating",
+      "https://www.google.com/search?q=hot+water&kgmid=/m/02l3ys"]},
+      {"@type": "Thing", "name": "water heater", "sameAs": ["https://en.wikipedia.org/wiki/Water_heating",
+      "https://www.google.com/search?q=water+heater&kgmid=/m/02l3ys"]},
+      {"@type": "Thing", "name": "tube fittings", "sameAs": ["https://en.wikipedia.org/wiki/Piping_and_plumbing_fitting",
+      "https://www.google.com/search?q=tube+fittings&kgmid=/m/0gtlsq"]},
+      {"@type": "Thing", "name": "bathrooms", "sameAs": ["https://en.wikipedia.org/wiki/Bathroom",
+      "https://www.google.com/search?q=bathrooms&kgmid=/m/01j2bj"]},
+      {"@type": "Thing", "name": "sewage", "sameAs": ["https://en.wikipedia.org/wiki/Sewage",
+      "https://www.google.com/search?q=sewage&kgmid=/m/01960d"]},
+      {"@type": "Thing", "name": "sewer gas", "sameAs": ["https://en.wikipedia.org/wiki/Sewer_gas",
+      "https://www.google.com/search?q=sewer+gas&kgmid=/m/06hg9j"]},
+      {"@type": "Thing", "name": "faucets", "sameAs": ["https://en.wikipedia.org/wiki/Tap_(valve)",
+      "https://www.google.com/search?q=faucets&kgmid=/m/02jz0l"]},
+      {"@type": "Thing", "name": "water pipe", "sameAs": ["https://en.wikipedia.org/wiki/Plumbing",
+      "https://www.google.com/search?q=water+pipe&kgmid=/m/0b_zf"]},
+      {"@type": "Thing", "name": "bathtub", "sameAs": ["https://en.wikipedia.org/wiki/Bathtub",
+      "https://www.google.com/search?q=bathtub&kgmid=/m/03dnzn"]}]
+      }
+      </script>
+      
+      
+
+
+
+
+</body>
+
+
+</html>

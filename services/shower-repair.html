@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="canonical" href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/shower-repair" />
+    <meta name="robots" content="index">
+    <link rel="icon" href="https://raw.githubusercontent.com/TintStudio/images/refs/heads/main/cropped-plumbers-in-rockford-180x180.webp" type="image/x-icon">
+    <title>Shower Repair and Installation</title>
+    <style>
+
+        /* Reset and base styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  /* nav section*/
+  nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2563eb; /* Adjust background color */
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+ul li {
+  position: relative;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  display: block;
+}
+
+ul li .contact-btn {
+  background-color: white;
+  color: #2563eb;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+/* Ensure the dropdown container is inline */
+/* Ensures the dropdown container is inline */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style the dropdown button */
+.dropdown > a {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between text and arrow */
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+/* Dropdown arrow styling */
+.dropdown > a::after {
+  content: "▼"; /* Unicode down arrow */
+  font-size: 12px;
+  color: white;
+  position: relative;
+  top: 2px; /* Adjust to move it up */
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Rotate arrow when hovered */
+.dropdown:hover > a::after {
+  transform: rotate(180deg);
+}
+
+/* Existing dropdown menu styling */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 250px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  width: 100%;
+}
+
+.dropdown-menu li a {
+  color: black;
+  padding: 10px;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f4f4f4;
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('https://github.com/TintStudio/images/blob/main/plumber-installing-new-pipes-2.jpg?raw=true') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Overlay Effect */
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hero Content */
+.hero-content {
+  color: white;
+  text-align: left;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.hero-content h4 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.hero-content h1 {
+  font-size: 38px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+/* Call-To-Action Button */
+.btn-primary {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #007bff;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+/*Service Section*/
+/* Services Section */
+.services {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f4f4f4;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Services Grid */
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Service Box */
+
+.service-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.service-box i {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.service-box h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+}
+
+/*Why Choose us*/
+/* Why Choose Us Section */
+.why-choose-us {
+  text-align: center;
+  padding: 50px 20px;
+  background: #ffffff;
+}
+
+.why-choose-us h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Why Choose Us Grid */
+.why-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Why Box */
+.why-box {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.why-box i {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.why-box h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0a2e5c;
+}
+
+.why-box p {
+  font-size: 16px;
+  color: #333;
+}
+
+.why-box:hover {
+  transform: translateY(-5px);
+}
+
+/*footer*/
+
+
+      .footer {
+          background-color: #1E4ED8;
+          color: white;
+          padding: 30px 50px;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+      }
+      .footer-column {
+          max-width: 250px;
+      }
+      .footer h3 {
+          margin-bottom: 15px;
+      }
+      .footer p, .footer a {
+          color: white;
+          text-decoration: none;
+          display: block;
+          margin-bottom: 8px;
+      }
+      .footer .social-icons a {
+          display: inline-block;
+          margin-right: 10px;
+          font-size: 20px;
+          color: white;
+      }
+      .footer .social-icons a:hover {
+          color: #FFD700;
+      }
+      .footer-bottom {
+          text-align: center;
+          padding: 15px;
+          background-color: #153DB3;
+          color: white;
+          font-size: 14px;
+      }
+
+      /*Content Section*/
+      .plumbing-services {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plumbing-services h2 {
+  color: #0a3871;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.text {
+  flex: 1;
+}
+
+.text p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #0a3871;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #072b5a;
+}
+
+.image {
+  flex: 1;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 5px;
+  max-width: 400px;
+}
+
+/*Faqs Section*/
+.faq {
+  text-align: center;
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.faq h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.faq-question {
+  width: 100%;
+  background: #002c66;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question .icon {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.faq-answer {
+  display: none;
+  background: #f8f8f8;
+  padding: 15px;
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-item.active .faq-question .icon {
+  transform: rotate(45deg);
+}
+
+/*Article Section*/
+.articles-section {
+  
+  color:black;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.articles-section h2 {
+  font-size: 2.1em;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.articles-container {
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 2px;
+}
+
+.article-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  text-align: left;
+}
+
+
+.article-box h3 {
+  font-size: 1.8em;
+  margin-bottom: 14px;
+  margin-top: 12px;
+  color: black;
+  text-align: center; /* Centers the heading */
+}
+
+
+.article-box p {
+  font-size: 1.1em;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.article-box ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0;
+  margin: 15px 0;
+  width: 100%;
+  overflow-wrap: break-word; /* Ensures long words wrap */
+}
+
+.article-box ul li {
+  width: 100%; /* Makes sure list items stay within the box */
+  word-wrap: break-word; /* Ensures words break properly */
+  white-space: normal; /* Prevents text from extending outside */
+  padding: 10px;
+  border-left: 4px solid #ffcc00;
+}
+
+.article-box ul li::before {
+  content: "✔"; /* Adds a checkmark as a bullet */
+  color: #27ae60; /* Green check color */
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.article-box ul li:hover {
+  background: #ececec;
+  transform: translateX(5px); /* Slight movement on hover */
+}
+
+
+.read-more {
+  display: inline-block;
+  margin-top: 15px;
+  color: #ffcc00;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+     <!--Nav Section-->
+     <nav>
+      <div class="logo">
+          <img src="https://raw.githubusercontent.com/TintStudio/images/refs/heads/main/plumbers-in-rockford.webp" alt="Logo">
+      </div>
+      <ul>
+          <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/">Home</a></li>
+          
+          <li class="dropdown">
+              <a href="#">Residential Plumbing </a>
+              <ul class="dropdown-menu">
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/clogged-drain-repair">Clogged Drain Repair and Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/garbage-disposal-repair">Plumbing and Garbage Disposal Repair</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/shower-repair">Shower Repair and Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/tankless-heater-repair">Tankless Water Heater Repair and Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/toilet-repair">Toilet Repair & Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/water-softener-repair">Water Softener Repair and Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/water-heater-repair">Water Heater Repair & Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/tub-drain-repair">Tubs and Shower Drain Repair and Installation</a></li>
+              </ul>
+          </li>
+  
+          <li class="dropdown">
+              <a href="#">Blog </a>
+              <ul class="dropdown-menu">
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/plumbing-experts-rockford">Top Benefits of Rockford Plumbing Experts</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/plumbing-tips-seasonal">Essential Seasonal Plumbing Tips</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/quick-plumbing-fix">Fix Plumbing Issues Quickly</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/rockford-emergency-plumbers">Emergency Plumbers in Rockford</a></li>
+              </ul>
+          </li>
+  
+        
+          <li><a class="contact-btn" href="https://www.plumbersinrockford.com/contact/" rel="Nofollow">Contact Us</a></li>
+      </ul>
+  </nav>
+    
+
+    <!--Hero Section-->
+
+    <section class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h4>Welcome to Plumbers in Rockford</h4>
+                <h1>24 Hour Shower Repair and Installation service in Rockford, IL</h1>
+                <p>Is your garbage disposal clogged or your plumbing giving you trouble? Don’t let leaks and blockages disrupt your day! Our expert plumbers provide fast, reliable repairs to keep your home running smoothly. Call now for quick service!</p>
+                <a href="tel:858-726-5590" class="btn-primary">
+                    📞 Book An Appointment
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--Article Section-->
+
+<section class="articles-section">
+  <h2>Shower Repair: How to Detect Issues and When to Call a Professional</h2>
+
+        
+    <div class="articles-container">
+        
+        <!-- Clogged Drain Repair and Installation -->
+        <article class="article-box">
+          <p>A functional shower is crucial for maintaining hygiene and comfort in any household. Over time, showers can develop various issues, ranging from minor leaks to complete system failures. Ignoring these problems can lead to costly repairs, water wastage, and even structural damage. By identifying shower problems early and taking the right measures, you can avoid expensive fixes and maintain a stress-free bathroom experience. This guide will help you recognize common shower issues, explore potential solutions, and determine when it’s best to call a professional for assistance.</p>
+
+          <h3>How to Detect Shower Issues</h3>
+          
+          <h4>Low Water Pressure</h4>
+          <p>A sudden decrease in water pressure could be caused by a clogged showerhead, mineral buildup, or deeper <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/">plumbing issues</a> such as leaks or pipe blockages.</p>
+          <p><strong>Solution:</strong> Remove the showerhead and soak it in vinegar to dissolve mineral deposits. If the problem persists, check your home’s plumbing system for leaks or blockages that may require professional attention.</p>
+          
+          <h4>Leaky Showerhead or Faucet</h4>
+          <p>Persistent dripping can lead to higher water bills and mold growth in your bathroom.</p>
+          <p><strong>Solution:</strong> Replace worn-out washers, O-rings, or the entire showerhead if necessary. If leaks persist, it may indicate an issue with the internal plumbing system that needs expert assessment.</p>
+          
+          <h4>Water Temperature Fluctuations</h4>
+          <p>If your shower water suddenly turns hot or cold, the issue could stem from a faulty mixing valve or a malfunctioning water heater.</p>
+          <p><strong>Solution:</strong> Inspect your water heater settings and test other faucets in your home to determine if the issue is isolated. If the problem persists, you may need to replace the shower’s mixing valve or service your water heater.</p>
+          
+          <h4>Slow Draining Shower</h4>
+          <p>Standing water in your shower often results from a clogged drain due to hair buildup, soap scum, or debris accumulation.</p>
+          <p><strong>Solution:</strong> Use a drain snake or a combination of baking soda and vinegar to clear minor clogs. For persistent drainage issues, a professional plumber can perform a thorough inspection and remove deep blockages.</p>
+          
+          <h4>Unusual Noises from Pipes</h4>
+          <p>Whistling, banging, or gurgling sounds coming from your shower pipes could indicate air pockets, high water pressure, or an obstruction within the plumbing system.</p>
+          <p><strong>Solution:</strong> If you hear persistent noises, turn off the water supply and inspect for visible leaks. Calling a plumber can help identify and resolve underlying issues before they cause further damage.</p>
+          
+          <h4>Cracked or Loose Tiles</h4>
+          <p>Damaged tiles and deteriorating grout can allow water to seep behind walls, leading to mold growth and structural damage over time.</p>
+          <p><strong>Solution:</strong> Regularly inspect and replace cracked tiles. Apply a high-quality waterproof sealant to grout lines to prevent future water infiltration.</p>
+          
+          <h3>Common Types of Shower Issues</h3>
+          
+          <ul>
+              <li><strong>Clogged Shower Drain:</strong> Accumulated hair, soap residue, and mineral deposits can slow down drainage, eventually leading to water pooling.</li>
+              <li><strong>Faulty Shower Valve:</strong> A malfunctioning valve can lead to inconsistent water temperatures, difficulty turning the shower on and off, or uneven water distribution.</li>
+              <li><strong>Leaking Shower Pan:</strong> A cracked or worn-out shower pan can allow water to seep into the floor, causing structural deterioration and mold growth.</li>
+              <li><strong>Broken Showerhead or Faucet:</strong> A damaged showerhead or malfunctioning faucet can lead to excessive water wastage and uneven water flow.</li>
+              <li><strong>Plumbing Pipe Leaks:</strong> Hidden leaks behind shower walls can lead to mold infestations and significant water damage.</li>
+          </ul>
+          
+          <h3>Why Choose a Professional for Shower Repair?</h3>
+          <p>While some minor shower issues can be fixed with DIY methods, complex problems require professional expertise. A certified plumber can:</p>
+          
+          <ul>
+              <li>Identify and diagnose shower-related issues accurately.</li>
+              <li>Ensure the correct installation and replacement of components.</li>
+              <li>Prevent water damage and mold growth by addressing hidden leaks.</li>
+              <li>Restore optimal water pressure and temperature balance efficiently.</li>
+              <li>Use specialized tools to detect plumbing issues that might not be visible to homeowners.</li>
+              <li>Offer long-term solutions that prevent recurring problems, saving you time and money.</li>
+          </ul>
+          
+          <h3>Recommended <a href="https://www.plumbersinrockford.com/services/residential-plumbing/shower-repair/">Shower Repair</a> Service in Rockford</h3>
+          <p>If you’re facing persistent shower problems, Plumbers in Rockford is your trusted solution. Our skilled technicians provide top-quality repair and installation services to ensure your shower functions smoothly and efficiently.</p>
+          
+          <h4>Our Services Include:</h4>
+          <ul>
+              <li>Showerhead and faucet repair</li>
+              <li>Leak detection and pipe repair</li>
+              <li>Drain unclogging and maintenance</li>
+              <li>Shower valve replacement</li>
+              <li>Tile and grout restoration</li>
+              <li>Water pressure adjustments and plumbing inspections</li>
+          </ul>
+          
+          <p>For professional shower repair services in Rockford, contact us today to schedule an appointment. Our expert team is ready to restore your shower to perfect working condition with efficient and long-lasting solutions.</p>
+          
+          <h3>Conclusion</h3>
+          <p>Addressing shower problems promptly can prevent extensive damage, reduce repair costs, and enhance your bathroom experience. Whether you're dealing with a leaky showerhead, clogged drain, or fluctuating water temperature, timely intervention is key. If DIY methods don’t resolve the issue, trust the professionals at Plumbers in Rockford to provide expert repair services and ensure your shower remains in optimal condition for years to come.</p>
+          
+          
+        </article>
+
+
+    </section>
+
+     <!--Service Section-->
+     <section class="services">
+      <h2>Our Services</h2>
+      <div class="service-container">
+          <div class="service-box">
+              <i class="fas fa-hand-holding-water"></i>
+              <h3>Clogged Drain Repair</h3>
+              <p>Expert solutions to clear clogged drains and restore smooth water flow.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/clogged-drain-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-trash-alt"></i>
+              <h3>Garbage Disposal Repair</h3>
+              <p>Reliable garbage disposal repair to keep your kitchen running efficiently.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/garbage-disposal-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-shower"></i>
+              <h3>Shower Repair & Installation</h3>
+              <p>Professional shower repair and installation for a perfect bathing experience.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/shower-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-burn"></i>
+              <h3>Tankless Water Heater Repair</h3>
+              <p>Efficient tankless water heater repairs to ensure continuous hot water.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/tankless-heater-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-toilet"></i>
+              <h3>Toilet Repair & Installation</h3>
+              <p>Dependable toilet repair and installation services for a hassle-free bathroom.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/toilet-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-water"></i>
+              <h3>Water Softener Repair</h3>
+              <p>Expert water softener repair services for clean and scale-free water.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/water-softener-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-tint"></i>
+              <h3>Water Heater Repair</h3>
+              <p>Quick and reliable water heater repairs to keep your water warm.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/water-heater-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-wrench"></i>
+              <h3>Tubs & Drain Repair</h3>
+              <p>Fix leaky tubs and drains efficiently to prevent water damage.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/tub-drain-repair" class="btn">Read More</a>
+          </div>
+      </div>
+  </section>
+
+
+
+
+
+
+<!--Faqs Section-->
+<section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-question">Why is my shower leaking?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>A leaking shower can be caused by a faulty showerhead, worn-out seals, or damaged pipes. Check for loose connections or cracks, and if the leak persists, contact a professional plumber for repairs.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">Why is my shower water pressure low?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>Low water pressure can be due to mineral buildup in the showerhead, clogged pipes, or a faulty pressure regulator. Cleaning or replacing the showerhead may help, but if the issue continues, a plumber can diagnose and fix it.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">How do I know if my shower valve needs to be replaced?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>If you're experiencing temperature fluctuations, difficulty turning the handle, or water leaks behind the wall, your shower valve may need replacement. A professional plumber can inspect and install a new valve if necessary.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">Can I replace a showerhead myself?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>Yes, replacing a showerhead is a simple task. Unscrew the old one, apply plumber’s tape to the threads, and screw in the new showerhead. However, if you experience leaks or pressure issues, a plumber can assist.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">How long does it take to install a new shower?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>Shower installation time varies based on complexity. A basic showerhead replacement takes minutes, while a full shower installation, including new plumbing and tiling, can take several days.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">How much does it cost to repair or install a shower?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>Shower repair costs depend on the issue, while installation costs vary based on materials and labor. Contact our Rockford plumbing team for a quote on your specific shower needs.</p>
+        </div>
+    </div>
+    
+    </div>
+</section>|
+
+<!--Article Section-->
+
+
+
+
+<footer>
+    <div class="footer">
+        <div class="footer-column">
+            <h3>PlumbPro Services</h3>
+            <p>Professional plumbing services for residential and commercial properties. Available 24/7 for all your plumbing needs.</p>
+            <div class="social-icons">
+                <a href="https://web.facebook.com/plumbersinrockford"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/plumberrockford"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/plumbersinrockford/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/plumbersinrockford/"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#showservice">Services</a>
+            <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/sitemap.xml">Sitemap</a>
+            <a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/">Commercial Plumbing</a>
+        </div>
+        <div class="footer-column">
+            <h3>Services</h3>
+            <a href="#">Drain Repair</a>
+            <a href="#">Water Heater Services</a>
+            <a href="#">Toilet Repair</a>
+            <a href="#">Faucet Installation</a>
+            <a href="#">Emergency Services</a>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-map-marker-alt"></i> 31 Greglynn St, Machesney Park, IL 61115, USA</p>
+            <p><i class="fas fa-phone"></i> (858) 726-5590</p>
+            <p><i class="fas fa-envelope"></i> plumbersinrockford@gmail.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2025 PlumbPro Services. All rights reserved.
+    </div>
+</footer>
+
+<script>
+
+document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const faqItem = button.parentElement;
+        const icon = button.querySelector('.icon');
+
+        // Toggle active class
+        faqItem.classList.toggle('active');
+
+        // Change icon from + to -
+        icon.textContent = faqItem.classList.contains('active') ? '−' : '+';
+    });
+});
+
+
+</script>
+
+
+
+</body>
+
+
+</html>

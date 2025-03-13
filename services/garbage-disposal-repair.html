@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="canonical" href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/garbage-disposal-repair" />
+    <meta name="robots" content="index">
+    <link rel="icon" href="https://raw.githubusercontent.com/TintStudio/images/refs/heads/main/cropped-plumbers-in-rockford-180x180.webp" type="image/x-icon">
+    <title>Plumbing and Garbage Disposal Repair</title>
+    <style>
+
+        /* Reset and base styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  /* nav section*/
+  nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2563eb; /* Adjust background color */
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+ul li {
+  position: relative;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  display: block;
+}
+
+ul li .contact-btn {
+  background-color: white;
+  color: #2563eb;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+/* Ensure the dropdown container is inline */
+/* Ensures the dropdown container is inline */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style the dropdown button */
+.dropdown > a {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between text and arrow */
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+/* Dropdown arrow styling */
+.dropdown > a::after {
+  content: "▼"; /* Unicode down arrow */
+  font-size: 12px;
+  color: white;
+  position: relative;
+  top: 2px; /* Adjust to move it up */
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Rotate arrow when hovered */
+.dropdown:hover > a::after {
+  transform: rotate(180deg);
+}
+
+/* Existing dropdown menu styling */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 250px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  width: 100%;
+}
+
+.dropdown-menu li a {
+  color: black;
+  padding: 10px;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f4f4f4;
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('https://github.com/TintStudio/images/blob/main/plumber-installing-new-pipes-2.jpg?raw=true') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Overlay Effect */
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hero Content */
+.hero-content {
+  color: white;
+  text-align: left;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.hero-content h4 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.hero-content h1 {
+  font-size: 38px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+/* Call-To-Action Button */
+.btn-primary {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #007bff;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+/*Service Section*/
+/* Services Section */
+.services {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f4f4f4;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Services Grid */
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Service Box */
+
+.service-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.service-box i {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.service-box h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+}
+
+/*Why Choose us*/
+/* Why Choose Us Section */
+.why-choose-us {
+  text-align: center;
+  padding: 50px 20px;
+  background: #ffffff;
+}
+
+.why-choose-us h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Why Choose Us Grid */
+.why-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Why Box */
+.why-box {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.why-box i {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.why-box h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0a2e5c;
+}
+
+.why-box p {
+  font-size: 16px;
+  color: #333;
+}
+
+.why-box:hover {
+  transform: translateY(-5px);
+}
+
+/*footer*/
+
+
+      .footer {
+          background-color: #1E4ED8;
+          color: white;
+          padding: 30px 50px;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+      }
+      .footer-column {
+          max-width: 250px;
+      }
+      .footer h3 {
+          margin-bottom: 15px;
+      }
+      .footer p, .footer a {
+          color: white;
+          text-decoration: none;
+          display: block;
+          margin-bottom: 8px;
+      }
+      .footer .social-icons a {
+          display: inline-block;
+          margin-right: 10px;
+          font-size: 20px;
+          color: white;
+      }
+      .footer .social-icons a:hover {
+          color: #FFD700;
+      }
+      .footer-bottom {
+          text-align: center;
+          padding: 15px;
+          background-color: #153DB3;
+          color: white;
+          font-size: 14px;
+      }
+
+      /*Content Section*/
+      .plumbing-services {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plumbing-services h2 {
+  color: #0a3871;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.text {
+  flex: 1;
+}
+
+.text p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #0a3871;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #072b5a;
+}
+
+.image {
+  flex: 1;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 5px;
+  max-width: 400px;
+}
+
+/*Faqs Section*/
+.faq {
+  text-align: center;
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.faq h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.faq-question {
+  width: 100%;
+  background: #002c66;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question .icon {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.faq-answer {
+  display: none;
+  background: #f8f8f8;
+  padding: 15px;
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-item.active .faq-question .icon {
+  transform: rotate(45deg);
+}
+
+/*Article Section*/
+.articles-section {
+  
+  color:black;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.articles-section h2 {
+  font-size: 2.1em;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.articles-container {
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 2px;
+}
+
+.article-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  text-align: left;
+}
+
+
+.article-box h3 {
+  font-size: 1.8em;
+  margin-bottom: 14px;
+  margin-top: 12px;
+  color: black;
+  text-align: center; /* Centers the heading */
+}
+
+
+.article-box p {
+  font-size: 1.1em;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.article-box ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0;
+  margin: 15px 0;
+  width: 100%;
+  overflow-wrap: break-word; /* Ensures long words wrap */
+}
+
+.article-box ul li {
+  width: 100%; /* Makes sure list items stay within the box */
+  word-wrap: break-word; /* Ensures words break properly */
+  white-space: normal; /* Prevents text from extending outside */
+  padding: 10px;
+  border-left: 4px solid #ffcc00;
+}
+
+.article-box ul li::before {
+  content: "✔"; /* Adds a checkmark as a bullet */
+  color: #27ae60; /* Green check color */
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.article-box ul li:hover {
+  background: #ececec;
+  transform: translateX(5px); /* Slight movement on hover */
+}
+
+
+.read-more {
+  display: inline-block;
+  margin-top: 15px;
+  color: #ffcc00;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+     <!--Nav Section-->
+     <nav>
+      <div class="logo">
+          <img src="https://raw.githubusercontent.com/TintStudio/images/refs/heads/main/plumbers-in-rockford.webp" alt="Logo">
+      </div>
+      <ul>
+          <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/">Home</a></li>
+          
+          <li class="dropdown">
+              <a href="#">Residential Plumbing </a>
+              <ul class="dropdown-menu">
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/clogged-drain-repair">Clogged Drain Repair and Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/garbage-disposal-repair">Plumbing and Garbage Disposal Repair</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/shower-repair">Shower Repair and Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/tankless-heater-repair">Tankless Water Heater Repair and Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/toilet-repair">Toilet Repair & Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/water-softener-repair">Water Softener Repair and Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/water-heater-repair">Water Heater Repair & Installation</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/tub-drain-repair">Tubs and Shower Drain Repair and Installation</a></li>
+              </ul>
+          </li>
+  
+          <li class="dropdown">
+              <a href="#">Blog </a>
+              <ul class="dropdown-menu">
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/plumbing-experts-rockford">Top Benefits of Rockford Plumbing Experts</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/plumbing-tips-seasonal">Essential Seasonal Plumbing Tips</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/quick-plumbing-fix">Fix Plumbing Issues Quickly</a></li>
+                  <li><a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/rockford-emergency-plumbers">Emergency Plumbers in Rockford</a></li>
+              </ul>
+          </li>
+  
+        
+          <li><a class="contact-btn" href="https://www.plumbersinrockford.com/contact/" rel="Nofollow">Contact Us</a></li>
+      </ul>
+  </nav>
+    
+    
+
+    <!--Hero Section-->
+
+    <section class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h4>Welcome to Plumbers in Rockford</h4>
+                <h1>24 Hour Plumbing and Garbage Disposal Repair service in Rockford, IL</h1>
+                <p>Is your garbage disposal clogged or your plumbing giving you trouble? Don’t let leaks and blockages disrupt your day! Our expert plumbers provide fast, reliable repairs to keep your home running smoothly. Call now for quick service!</p>
+                <a href="tel:858-726-5590" class="btn-primary">
+                    📞 Book An Appointment
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--Article Section-->
+
+<section class="articles-section">
+    <h2>
+      Top Home Maintenance Tips to Prevent Clogged Drain Issues</h2>
+        
+    <div class="articles-container">
+        
+        <!-- Clogged Drain Repair and Installation -->
+        <article class="article-box">
+          <p>A well-maintained home ensures comfort and functionality, but one of the most common and frustrating plumbing issues homeowners face is clogged drains. Preventing clogged drains not only saves money on repairs but also helps maintain a clean and hygienic living environment. Clogged drains can lead to foul odors, water backups, and even structural damage if left unchecked. Understanding the root causes and adopting proactive maintenance strategies can save homeowners from costly plumbing emergencies.</p>
+
+          <p>In this article, we’ll explore the top home maintenance tips to keep your drains free of blockages and running smoothly. By implementing these practices, you can extend the lifespan of your plumbing system and maintain a hassle-free household.</p>
+          
+          <h3>Dispose of Grease Properly</h3>
+          <p>Grease and cooking oils are major culprits for clogged kitchen drains. When poured down the sink, they solidify and create stubborn blockages over time. Instead of disposing of them this way, collect grease in a container and throw it in the trash. Another effective method is to mix used cooking grease with absorbent materials like coffee grounds or paper towels before disposal. Additionally, wiping greasy pans and dishes with a paper towel before washing them minimizes grease buildup in pipes.</p>
+          
+          <h3>Use Drain Screens</h3>
+          <p>Installing drain screens or strainers in sinks, tubs, and showers helps catch hair, soap scum, food particles, and other debris before they enter your pipes. Regularly cleaning these strainers will prevent blockages from forming. Investing in high-quality stainless steel or silicone drain covers can provide better durability and protection against clogs. Make it a habit to remove trapped debris from the screens daily to ensure optimal drainage.</p>
+          
+          <h3>Flush Drains with Hot Water</h3>
+          <p>Pouring boiling water down your drains once a week helps dissolve grease, soap residue, and other debris that may be accumulating inside your pipes. This simple habit can prevent buildup and keep water flowing smoothly. To enhance this process, you can add a small amount of dish soap to help break down grease more effectively. For best results, pour hot water in two stages—first, to loosen any debris, and then again after a few minutes to flush out the loosened particles.</p>
+          
+          <h3>Be Mindful of What You Flush</h3>
+          <p>Toilets are designed to handle human waste and toilet paper—nothing more. Flushing items like paper towels, wipes, feminine hygiene products, and cotton swabs can lead to severe blockages. Even “flushable” wipes don’t break down as easily as toilet paper and can contribute to plumbing issues. Always dispose of such items in the trash instead. Keeping a small trash bin in the bathroom encourages proper disposal habits.</p>
+          
+          <h3>Clean Drains with Baking Soda and Vinegar</h3>
+          <p>A natural way to prevent clogs is by using a baking soda and vinegar solution. Pour one cup of baking soda followed by one cup of vinegar down the drain. Let it sit for 30 minutes, then rinse with hot water. This method helps break down grease and other residues. For tougher clogs, try using a plunger or drain snake in combination with this treatment to dislodge debris.</p>
+          
+          <h3>Avoid Overusing Chemical Drain Cleaners</h3>
+          <p>While chemical drain cleaners can clear minor clogs, excessive use can damage your pipes. These harsh chemicals can corrode plumbing over time, leading to leaks and costly repairs. Instead, opt for natural solutions or professional drain cleaning services. If you must use a chemical cleaner, choose an enzyme-based product that is safer for your plumbing system and the environment.</p>
+          
+          <h3>Regularly Clean Garbage Disposals</h3>
+          <p>If you have a garbage disposal, maintain it by running cold water while in use and occasionally grinding ice cubes to remove buildup. Avoid disposing of fibrous foods, eggshells, and coffee grounds, as they can lead to blockages. Adding citrus peels occasionally can help keep the disposal fresh and odor-free. Additionally, periodically using a garbage disposal cleaner or mild dish soap can prevent grease accumulation.</p>
+          
+          <h3>Professional Garbage Disposal Repair and Maintenance</h3>
+          <p>Garbage disposals make kitchen cleanup easier, but they require regular maintenance to function efficiently. Over time, food particles, grease, and foreign objects can cause blockages, reduce efficiency, or even lead to complete failure. If you notice strange noises, slow draining, or a foul odor coming from your disposal, it may be time for a repair.</p>
+          
+          <h3>Expert Garbage Disposal Repair in Rockford</h3>
+          <p>If your <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/">garbage disposal</a> is malfunctioning, don’t wait until it completely breaks down. At Plumbers in Rockford, we provide top-quality garbage disposal repair and installation services. Whether your unit is clogged, leaking, or not working at all, our skilled technicians can diagnose and fix the issue quickly and affordably.</p>
+          
+          <p>For professional garbage disposal repair in Rockford, our experienced plumbers use advanced tools and techniques to ensure that your drainage system is functioning optimally. From minor clogs to major blockages, we provide comprehensive solutions tailored to your needs. Whether it’s a slow drain or a complete stoppage, our team can diagnose the problem and resolve it efficiently. We understand the importance of maintaining a smooth and uninterrupted plumbing system, which is why we offer timely and professional services. Don't let a clogged drain disrupt your daily routine—trust us to restore your drainage system quickly and effectively.</p>
+          
+        
+          
+          <h3>Expert Garbage Disposal Repair in Rockford</h3>
+          <p>If your <a href="https://www.plumbersinrockford.com/services/residential-plumbing/garbage-disposal-repair/">garbage disposal</a> is malfunctioning, don’t wait until it completely breaks down. At Plumbers in Rockford, we provide top-quality garbage disposal repair and installation services. Whether your unit is clogged, leaking, or not working at all, our skilled technicians can diagnose and fix the issue quickly and affordably.</p>
+          
+          <p>For professional garbage disposal repair in Rockford, our experienced plumbers use advanced tools and techniques to ensure that your drainage system is functioning optimally. Whether it’s a minor clog or a major breakdown, we provide comprehensive solutions tailored to your needs.</p>
+          
+          <p>Don't let a broken garbage disposal disrupt your daily routine—trust Plumbers in Rockford to restore your kitchen’s functionality quickly and efficiently. Contact us today to schedule a service appointment.</p>
+          
+        
+        </article>
+
+
+    </section>
+
+     <!--Service Section-->
+     <section class="services">
+      <h2>Our Services</h2>
+      <div class="service-container">
+          <div class="service-box">
+              <i class="fas fa-hand-holding-water"></i>
+              <h3>Clogged Drain Repair</h3>
+              <p>Expert solutions to clear clogged drains and restore smooth water flow.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/clogged-drain-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-trash-alt"></i>
+              <h3>Garbage Disposal Repair</h3>
+              <p>Reliable garbage disposal repair to keep your kitchen running efficiently.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/garbage-disposal-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-shower"></i>
+              <h3>Shower Repair & Installation</h3>
+              <p>Professional shower repair and installation for a perfect bathing experience.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/shower-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-burn"></i>
+              <h3>Tankless Water Heater Repair</h3>
+              <p>Efficient tankless water heater repairs to ensure continuous hot water.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/tankless-heater-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-toilet"></i>
+              <h3>Toilet Repair & Installation</h3>
+              <p>Dependable toilet repair and installation services for a hassle-free bathroom.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/toilet-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-water"></i>
+              <h3>Water Softener Repair</h3>
+              <p>Expert water softener repair services for clean and scale-free water.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/water-softener-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-tint"></i>
+              <h3>Water Heater Repair</h3>
+              <p>Quick and reliable water heater repairs to keep your water warm.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/water-heater-repair" class="btn">Read More</a>
+          </div>
+          <div class="service-box">
+              <i class="fas fa-wrench"></i>
+              <h3>Tubs & Drain Repair</h3>
+              <p>Fix leaky tubs and drains efficiently to prevent water damage.</p>
+              <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/services/tub-drain-repair" class="btn">Read More</a>
+          </div>
+      </div>
+  </section>
+
+
+
+
+
+
+<!--Faqs Section-->
+<section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-question">Why is my garbage disposal not working?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>Your garbage disposal may not be working due to a power issue, a jammed impeller, or a tripped reset button. First, check if it's plugged in and press the reset button on the bottom. If it still doesn’t work, a plumber may be needed.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">What causes a garbage disposal to get jammed?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>Jams are often caused by hard or fibrous food items like bones, fruit pits, or vegetable peels. To fix a jam, turn off the power, use an Allen wrench in the disposal’s bottom slot, and manually rotate the blades to free the obstruction.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">Why does my garbage disposal make a humming noise?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>A humming noise usually means the motor is running, but the blades are jammed. Turn off the unit, use a wrench to free the jam, and press the reset button before turning it back on.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">How do I get rid of bad smells from my garbage disposal?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>To remove odors, run cold water and grind ice cubes with lemon peels or baking soda. Avoid putting grease and food scraps that can cause buildup and bad smells.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">Can I fix a leaking garbage disposal myself?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>Leaks can come from the sink flange, drain pipe, or the disposal itself. Tighten connections and check seals. If the unit itself is leaking, it may need replacement.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <button class="faq-question">When should I replace my garbage disposal?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>If your disposal frequently jams, makes excessive noise, or leaks from the unit itself, it may be time for a replacement. Most garbage disposals last 8-15 years with proper maintenance.</p>
+        </div>
+    </div>
+    
+        <button class="faq-question">When should I replace my garbage disposal?<span class="icon">+</span></button>
+        <div class="faq-answer">
+            <p>If your disposal frequently jams, makes excessive noise, or leaks from the unit itself, it may be time for a replacement. Most garbage disposals last 8-15 years with proper maintenance.</p>
+        </div>
+    </div>
+    
+    </div>
+</section>|
+
+<!--Article Section-->
+
+
+
+
+<footer>
+    <div class="footer">
+        <div class="footer-column">
+            <h3>PlumbPro Services</h3>
+            <p>Professional plumbing services for residential and commercial properties. Available 24/7 for all your plumbing needs.</p>
+            <div class="social-icons">
+                <a href="https://web.facebook.com/plumbersinrockford"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/plumberrockford"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/plumbersinrockford/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/plumbersinrockford/"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#showservice">Services</a>
+            <a href="https://rockfordplumbers.github.io/rockfordresidentialplumbing/sitemap.xml">Sitemap</a>
+            <a href="https://rockfordplumbers.github.io/rockfordcommercialplumbing/">Commercial Plumbing</a>
+        </div>
+        <div class="footer-column">
+            <h3>Services</h3>
+            <a href="#">Drain Repair</a>
+            <a href="#">Water Heater Services</a>
+            <a href="#">Toilet Repair</a>
+            <a href="#">Faucet Installation</a>
+            <a href="#">Emergency Services</a>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-map-marker-alt"></i> 31 Greglynn St, Machesney Park, IL 61115, USA</p>
+            <p><i class="fas fa-phone"></i> (858) 726-5590</p>
+            <p><i class="fas fa-envelope"></i> plumbersinrockford@gmail.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2025 PlumbPro Services. All rights reserved.
+    </div>
+</footer>
+
+<script>
+
+document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const faqItem = button.parentElement;
+        const icon = button.querySelector('.icon');
+
+        // Toggle active class
+        faqItem.classList.toggle('active');
+
+        // Change icon from + to -
+        icon.textContent = faqItem.classList.contains('active') ? '−' : '+';
+    });
+});
+
+
+</script>
+
+
+
+</body>
+
+
+</html>
